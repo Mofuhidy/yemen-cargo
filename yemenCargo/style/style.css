@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap");
+:root {
+  --primary-color: #ffbe34;
+  --primary-sec-color: #091242;
+  --secondary-color: #f4f4f4;
+  --text-heading-color: #1c1f35;
+  --text-paragraph-color: #666c89;
+  --gradient: linear-gradient(
+    94.06deg,
+    #ffb629 -1.21%,
+    #ffda56 50.75%,
+    #ffd7a6 102.71%
+  );
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-size: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-heading-color);
+}
+
+p {
+  color: var(--text-paragraph-color);
+  margin-bottom: 0;
+}
+
+.hero {
+  height: 100vh;
+  background: url("../assets/Backgroound.jpg");
+  box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.5);
+  background-position: center 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  padding-inline: 4rem;
+}
+
+header .firstNav {
+  height: 6rem;
+  background-color: var(--primary-sec-color);
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.contact ul {
+  gap: 2.5rem;
+}
+.contact ul li img {
+  height: 2.9375rem;
+}
+
+.contact ul li a {
+  text-decoration: none;
+}
+
+.contact ul li p {
+  color: #fff;
+  font-size: 0.75rem;
+  font-family: "Krub", sans-serif;
+  font-style: normal;
+  line-height: 1.18rem;
+  margin: 0;
+  margin-left: 0.8rem;
+}
+
+header .secNav {
+  height: 4rem;
+  background: rgba(9, 18, 66, 0.25);
+}
+
+.secNav ul li > img {
+  height: 1.19rem;
+}
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Krub", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.023%;
+  transition: ease-in-out 0.1s;
+}
+
+.nav-items a:hover {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 20px;
+}
+
+.nav-items a:active {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 20px;
+}
+
+.nav-items a.active {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 20px;
+}
+
+.social li a img:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+.secNav ul {
+  gap: 1.75rem;
+}
+
+.nav-items {
+  position: relative;
+}
+
+li.nav-items:not(:last-child)::after {
+  content: "";
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-width: 2px 1px 0 0;
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  height: 75%;
+}
+
+.hero-content {
+  margin-top: 5rem;
+  padding-left: 10rem;
+  display: flex;
+  width: 35.6rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-content p {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: rgba(4, 28, 55, 0.5);
+  padding: 0.1875rem 0.5625rem;
+  width: 18.3125rem;
+  align-items: center;
+  border-left: var(--primary-color) 0.25rem solid;
+}
+
+.services {
+  min-height: 100vh;
+  padding-inline: 14rem;
+  padding-block: 10rem;
+  gap: 2rem;
+}
+
+.smallLabels {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0.44rem;
+  background-color: var(--secondary-color);
+  border-left: var(--primary-color) 0.25rem solid;
+  width: 7.5625rem;
+  height: 1.4375rem;
+}
+
+.headerServices h3 {
+  columns: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 2.18rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 18.375rem;
+  height: 5.8125rem;
+  flex-shrink: 0;
+}
+
+.servicesCard .col {
+  width: 25rem;
+}
+
+.service {
+  gap: 3px;
+}
+
+.service .line {
+  width: 1rem;
+  height: auto;
+  background: var(--secondary-color);
+  margin-inline: 1rem;
+}
+
+.service .icon {
+  width: 5rem;
+  height: 7.1875rem;
+}
+
+.service .icon img {
+  height: auto;
+  width: 3rem;
+}
+
+.service h5 {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.55rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.service p {
+  color: var(--text-paragraph-color);
+  font-family: "Krub", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+section.why-us {
+  min-height: 60rem;
+  position: relative;
+}
+
+.bg {
+  background: url(../assets/secBackground.jpg);
+  height: 31.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.whyUsBox {
+  padding-top: 5rem;
+  padding-left: 3rem;
+  margin-inline: 14rem;
+  height: 45rem;
+  width: 60rem;
+  background-color: #fff;
+  position: absolute;
+  top: 15rem;
+}
+
+.whyUsBoxDetails {
+  width: 33rem;
+}
+
+.whyUsBoxDetails h3 {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 23rem;
+}
+
+.whyUsBoxDetails .logisticPara {
+  color: var(--text-paragraph-color);
+  font-family: "Krub", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.523%;
+  width: 20rem;
+}
+
+.whyUsBox .images {
+  height: 30rem;
+}
+
+.images .firstAbout {
+  width: 28rem;
+  height: 23rem;
+  flex-shrink: 0;
+}
+.images .secAbout {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+}
+
+.prosDetails .prosIcon img {
+  width: 2.5rem;
+  margin-right: 0.3rem;
+}
+
+.prosDetails p {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.content {
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+}
+
+.content h3 {
+  color: var(--text-heading-color);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 2.15rem;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-inline: 6rem;
+  justify-items: center;
+}
+
+.photos-grid img {
+  width: 14rem;
+  height: auto;
+}
+
+.photos-grid .img-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.img-container:hover .img-details {
+  opacity: 1;
+}
+
+.img-details {
+  opacity: 0;
+  position: absolute;
+  bottom: -1.25rem;
+  padding: 1rem;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.7, 0.4);
+}
+
+.img-details h5 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.5ms;
+  text-align: center;
+  margin-bottom: 2.5px;
+}
+
+.img-details p {
+  color: #ffb629;
+  font-family: "Krub", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.523%;
+}
+
+.bgGradient {
+  height: 50vh;
+  width: 100%;
+  background: var(--gradient);
+  position: absolute;
+  bottom: -100px;
+  z-index: -1;
+}
+
+.why-choose {
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    var(--primary-sec-color) 50%,
+    var(--secondary-color) 50%
+  );
+}
+
+.why-choose .whyChooseImg {
+  width: 47rem;
+}
+
+.whyChooseBox h3 {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 25rem;
+  padding-bottom: 1rem;
+}
+
+.whyChooseBox .whyChooseParag {
+  color: var(--text-paragraph-color);
+  font-family: "Krub", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 151.523%;
+  width: 25rem;
+  padding-bottom: 1.5rem;
+}
+
+.whyChooseBox {
+  padding-left: 6rem;
+}
+
+.whyChooseBox .smallLabels {
+  background-color: rgba(232, 232, 232, 0.5);
+}
+
+.featureIcon {
+  width: 3rem;
+}
+
+.featureDetails p {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bookingSection {
+  height: 100vh;
+  background: linear-gradient(180deg, #ffd44e 0%, rgba(255, 212, 78, 0) 100%);
+  padding-bottom: 47rem;
+}
+
+.bookingSection {
+  padding-inline: 10rem;
+}
+
+.bookingContaienr .smallLabels {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 0.44rem;
+  background: rgba(168, 169, 175, 0.25);
+  border-left: var(--primary-sec-color) 0.25rem solid;
+  width: 6rem;
+}
+
+.bookingContaienr h3 {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 23rem;
+}
+
+.bookingInfoDetails {
+  padding-left: 1rem;
+}
+
+.bookingInfoDetails p {
+  margin-bottom: 0;
+  color: var(--text-heading-color);
+  font-family: "Krub", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.023%;
+}
+
+.bookingInfoDetails a {
+  text-decoration: none;
+}
+
+.bookingInfoDetails a:hover {
+  text-decoration: underline;
+  color: var(--text-heading-color);
+}
+
+.bookingInfo img {
+  width: 3rem;
+}
+
+input {
+  border: 1px solid var(--text-paragraph-color);
+  background-color: transparent;
+  padding: 0.5rem;
+  width: 17rem;
+  height: 3rem;
+}
+
+input::placeholder {
+  color: var(--text-heading-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+button {
+  display: flex;
+  padding: 1rem 0.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--gradient);
+
+  color: var(--text-heading-color);
+  font-family: "Krub";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135.023%;
+  border: none;
+  width: 10rem;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sponsorsImages img {
+  height: 13rem;
+  padding: 0;
+  margin: 0;
+  font-size: 0px;
+}
+
+.borderLine {
+  width: 96.4%;
+  border: 0.5px solid var(--text-paragraph-color);
+}
+
+.secBg {
+  background: url(../assets/footer.png);
+  height: 21.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -15px;
+}
+
+.footerNav {
+  background-color: rgb(31, 37, 78);
+  height: 7rem;
+  margin-top: -25px;
+}
+
+.footerNav .logoDiv {
+  background: var(--primary-sec-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.subs h2 {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer {
+  height: 45vh;
+  background-color: var(--primary-sec-color);
+  padding-inline: 14rem;
+  margin-top: -2rem;
+}
+
+.footerInfo {
+  padding-top: 5rem;
+}
+
+.footerInfoDetails {
+  padding-left: 1rem;
+}
+
+.footerInfoDetails p {
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "Krub", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135.023%;
+}
+
+.footerInfoDetails a {
+  text-decoration: none;
+}
+
+.footerInfoDetails a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-footer-names {
+  height: 75px;
+  border-top: 1px solid var(--text-paragraph-color);
+  background-color: var(--primary-sec-color);
+  padding-top: 3px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-footer-names a {
+  text-decoration: none;
+  color: white;
+  margin-inline: 5px;
+}
+
+.footer-footer-names a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 100dvh;
+  }
+
+  nav {
+    padding-inline: 2rem;
+  }
+
+  header .firstNav {
+    height: 6rem;
+  }
+
+  .logo {
+    height: 1.5rem;
+  }
+
+  .contact ul {
+    gap: 2.5rem;
+  }
+  .contact ul li img {
+    height: 1.8rem;
+  }
+
+  .contact ul li a {
+    text-decoration: none;
+  }
+
+  .contact ul li p {
+    color: #fff;
+    font-size: 0.7rem;
+    font-family: "Krub", sans-serif;
+    font-style: normal;
+    line-height: 1.18rem;
+    margin: 0;
+    margin-left: 0.8rem;
+  }
+
+  .hero-content {
+    margin-top: 5rem;
+    padding-left: 0rem;
+    margin-left: 0;
+    display: flex;
+    width: 18rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .servicesCard .col {
+    width: 20rem;
+  }
+}
