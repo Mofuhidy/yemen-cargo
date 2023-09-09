@@ -749,7 +749,7 @@ footer {
 
   .hero-details {
     padding-inline: 1rem;
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
 
   .hero-content h1 {
@@ -766,7 +766,7 @@ footer {
   }
 
   .headerServices h3 {
-    text-align: center;
+    text-align: start;
   }
 
   .bg {
@@ -840,6 +840,10 @@ footer {
     text-align: start;
   }
 
+  .whyUsBoxDetails .logisticPara {
+    width: 22rem;
+  }
+
   .bgGradient {
     height: 35vh;
   }
@@ -856,6 +860,7 @@ footer {
   }
 
   .why-choose div.imgContainer {
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
   }
@@ -868,6 +873,7 @@ footer {
   .whyChooseBox {
     padding-inline: 4rem;
     margin-top: 4rem;
+    padding-bottom: 5rem;
     width: 100%;
   }
 
@@ -882,10 +888,19 @@ footer {
 
   .bookingSection {
     padding-inline: 2rem;
+    padding-top: 3rem;
+  }
+
+  .bookingContaienr h3 {
+    width: 21.5rem;
   }
 
   .bookingContaienr {
     flex-direction: column;
+  }
+
+  .bookingDetails {
+    margin-left: 3rem;
   }
 
   input {
@@ -916,11 +931,28 @@ footer {
     height: 30dvh;
   }
 
+  .footerNav {
+    padding-inline: 0;
+  }
+
+  .subs h2 {
+    font-size: 1.3rem;
+  }
+
   footer ul {
     flex-direction: column;
     align-items: center;
     padding-top: 2.5rem;
   }
+
+  .footerInfo {
+    padding-block: 2.5rem;
+  }
+
+  .features {
+    margin-left: -10px;
+  }
+
   .subs {
     white-space: nowrap;
     padding-left: 2rem;
@@ -928,8 +960,8 @@ footer {
 
   .footer-footer-names {
     flex-direction: column;
-    height: auto;
     padding-block: 2rem;
+    font-size: 0.7rem;
   }
 
   /* design the mobile menu */
