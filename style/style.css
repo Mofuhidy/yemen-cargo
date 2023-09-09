@@ -70,6 +70,11 @@ nav {
   padding-inline: 4rem;
 }
 
+.navInfoMobile,
+.cancelIcon {
+  display: none;
+}
+
 header .firstNav {
   height: 6rem;
   background-color: var(--primary-sec-color);
@@ -709,8 +714,10 @@ footer {
   }
 
   .contact ul {
-    gap: 2.5rem;
+    gap: 1rem;
+    flex-direction: row-reverse;
   }
+
   .contact ul li img {
     height: 2.5rem;
   }
@@ -719,7 +726,7 @@ footer {
     text-decoration: none;
   }
   .social {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .contact ul li p {
@@ -747,6 +754,7 @@ footer {
 
   .hero-content h1 {
     font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .servicesCard .col {
@@ -769,8 +777,8 @@ footer {
     margin-inline: 0;
     flex-direction: column;
     padding-left: 1rem;
-    top: 120px;
-    width: auto;
+    top: 145px;
+    width: 100%;
   }
 
   .whyUsBoxDetails {
@@ -792,7 +800,7 @@ footer {
   .images .secAbout {
     position: absolute;
     bottom: -45px;
-    left: 75px;
+    left: 65px;
   }
 
   .content {
@@ -824,7 +832,11 @@ footer {
 
   .img-details {
     opacity: 1;
-    white-space: break-spaces;
+    white-space: normal;
+    text-align: start;
+  }
+
+  .img-details h3 {
     text-align: start;
   }
 
@@ -844,7 +856,8 @@ footer {
   }
 
   .why-choose div.imgContainer {
-    width: 90%;
+    display: flex;
+    justify-content: center;
   }
 
   .why-choose .whyChooseImg {
@@ -875,10 +888,6 @@ footer {
     flex-direction: column;
   }
 
-  form {
-    margin: 0 50px;
-  }
-
   input {
     width: 100%;
   }
@@ -888,7 +897,7 @@ footer {
   }
 
   .secBg {
-    height: 30rem;
+    height: 34rem;
     margin: -195px;
   }
 
@@ -921,6 +930,61 @@ footer {
     flex-direction: column;
     height: auto;
     padding-block: 2rem;
+  }
+
+  /* design the mobile menu */
+  .navInfoMobile,
+  .cancelIcon {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .navInfoMobile {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(9, 18, 66, 0.25);
+    padding-top: 90px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  body.active {
+    overflow-y: hidden;
+  }
+
+  .cancelIcon {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+  }
+
+  .cancelIcon.active,
+  .navInfoMobile.active {
+    display: flex;
+  }
+
+  .navInfoMobile li a {
+    color: #f4f4f4;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+  }
+
+  .mobileLinks {
+    width: 75%;
+    border-bottom: 1px solid #f4f4f4b1;
+    padding: 0 22px;
+    margin-left: 24px;
+  }
+
+  li.nav-items:not(:last-child)::after {
+    content: none;
   }
 }
 
