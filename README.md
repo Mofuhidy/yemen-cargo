@@ -135,6 +135,7 @@ https://mofuhidy.github.io/yemen-cargo/
 👤 **Mohammed AlFuhidy (Fuhidy)**
 
 - GitHub: [@Mofuhidy](https://github.com/Mofuhidy)
+- LinkedIn: [mofuhidy](https://linkedin.com/in/mo-fuhidy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
