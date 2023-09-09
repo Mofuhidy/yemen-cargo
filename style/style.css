@@ -54,7 +54,7 @@ p {
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../assets/Backgroound.jpg");
   box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.5);
   background-position: center 80px;
@@ -92,7 +92,7 @@ header .firstNav {
 
 .contact ul li p {
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Krub", sans-serif;
   font-style: normal;
   line-height: 1.18rem;
@@ -103,6 +103,10 @@ header .firstNav {
 header .secNav {
   height: 4rem;
   background: rgba(9, 18, 66, 0.25);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .secNav ul li > img {
@@ -158,7 +162,7 @@ li.nav-items:not(:last-child)::after {
 }
 
 .hero-content {
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding-left: 10rem;
   display: flex;
   width: 35.6rem;
@@ -170,7 +174,7 @@ li.nav-items:not(:last-child)::after {
 .hero-content h1 {
   color: #fff;
   font-family: "Rubik", sans-serif;
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -266,32 +270,28 @@ li.nav-items:not(:last-child)::after {
   line-height: 1.5rem;
 }
 
-section.why-us {
-  min-height: 60rem;
+.why-us {
   position: relative;
 }
 
 .bg {
-  background: url(../assets/secBackground.jpg);
-  height: 31.5rem;
+  background-image: url("../assets/secBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: 31rem;
 }
 
 .whyUsBox {
   padding-top: 5rem;
-  padding-left: 3rem;
-  margin-inline: 14rem;
+  padding-left: 5rem;
   height: 45rem;
-  width: 60rem;
   background-color: #fff;
   position: absolute;
-  top: 15rem;
-}
-
-.whyUsBoxDetails {
-  width: 33rem;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 
 .whyUsBoxDetails h3 {
@@ -347,6 +347,7 @@ section.why-us {
 .content {
   width: 100%;
   min-height: 60vh;
+  margin-top: 25rem;
   position: relative;
 }
 
@@ -364,8 +365,8 @@ section.why-us {
 .photos-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-inline: 6rem;
-  justify-items: center;
+  padding-inline: 16rem;
+  justify-content: center;
 }
 
 .photos-grid img {
@@ -421,16 +422,18 @@ section.why-us {
 }
 
 .why-choose {
-  height: 100vh;
+  height: 100dvh;
   background: linear-gradient(
     to right,
     var(--primary-sec-color) 50%,
     var(--secondary-color) 50%
   );
+  margin-top: 5rem;
 }
 
 .why-choose .whyChooseImg {
   width: 47rem;
+  margin-left: 10rem;
 }
 
 .whyChooseBox h3 {
@@ -596,7 +599,7 @@ button:hover {
 
 .secBg {
   background: url(../assets/footer.png);
-  height: 21.5rem;
+  height: 24.5rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -730,11 +733,121 @@ footer {
     width: 18rem;
   }
 
+  .hero-details {
+    padding-inline: 1rem;
+  }
+
   .hero-content h1 {
     font-size: 2rem;
   }
 
   .servicesCard .col {
     width: 20rem;
+  }
+
+  .services {
+    padding-inline: 2rem;
+  }
+
+  .headerServices h3 {
+    text-align: center;
+  }
+
+  .bg {
+    height: 14dvh;
+  }
+
+  .whyUsBox {
+    margin-inline: 0;
+    flex-direction: column;
+    padding-left: 1rem;
+    top: 120px;
+    width: auto;
+  }
+
+  .whyUsBoxDetails {
+    padding-bottom: 4rem;
+    width: auto;
+  }
+
+  .images {
+    padding-inline: 0rem;
+  }
+
+  .images .firstAbout {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .images .secAbout {
+    position: absolute;
+    bottom: -45px;
+    left: 50px;
+  }
+
+  .content {
+    margin-top: 300px;
+  }
+
+  .content h3 {
+    padding-inline: 1rem;
+  }
+
+  .photos-grid {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overflow-y: visible;
+  }
+
+  .photos-grid .img-container {
+    scroll-snap-align: start;
+  }
+
+  .photos-grid img {
+    width: 12rem;
+  }
+
+  .img-details {
+    opacity: 1;
+  }
+
+  .bgGradient {
+    height: 35vh;
+  }
+
+  .why-choose {
+    height: 100dvh;
+    background: linear-gradient(
+      to bottom,
+      var(--primary-sec-color) 15%,
+      var(--secondary-color) 35%
+    );
+    flex-direction: column;
+    justify-content: center;
+  }
+  .why-choose .whyChooseImg {
+    width: 23rem;
+  }
+  .whyChooseBox {
+    padding-inline: 4rem;
+    margin-top: 4rem;
+  }
+
+  .whyChooseBox h3 {
+    font-size: 1.9rem;
+    width: 18rem;
+  }
+
+  .whyChooseBox .whyChooseParag {
+    width: 18rem;
+  }
+
+  .bookingSection {
+    padding-inline: 2rem;
+  }
+
+  .bookingContaienr {
+    flex-direction: column;
   }
 }
