@@ -365,7 +365,7 @@ li.nav-items:not(:last-child)::after {
 .photos-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  padding-inline: 16rem;
+  padding-inline: 8rem;
   justify-content: center;
 }
 
@@ -422,18 +422,18 @@ li.nav-items:not(:last-child)::after {
 }
 
 .why-choose {
-  height: 100dvh;
   background: linear-gradient(
     to right,
     var(--primary-sec-color) 50%,
     var(--secondary-color) 50%
   );
   margin-top: 5rem;
+  padding-block: 10rem;
 }
 
 .why-choose .whyChooseImg {
-  width: 47rem;
-  margin-left: 10rem;
+  width: 45rem;
+  margin-left: 5rem;
 }
 
 .whyChooseBox h3 {
@@ -599,7 +599,7 @@ button:hover {
 
 .secBg {
   background: url(../assets/footer.png);
-  height: 24.5rem;
+  height: 24rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
