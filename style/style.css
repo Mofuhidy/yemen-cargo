@@ -460,6 +460,7 @@ li.nav-items:not(:last-child)::after {
 
 .whyChooseBox {
   padding-left: 6rem;
+  width: 50%;
 }
 
 .whyChooseBox .smallLabels {
@@ -480,9 +481,8 @@ li.nav-items:not(:last-child)::after {
 }
 
 .bookingSection {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(180deg, #ffd44e 0%, rgba(255, 212, 78, 0) 100%);
-  padding-bottom: 47rem;
 }
 
 .bookingSection {
@@ -687,6 +687,10 @@ footer {
   color: white;
 }
 
+.imgContainer {
+  width: 50%;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     height: 100dvh;
@@ -708,11 +712,14 @@ footer {
     gap: 2.5rem;
   }
   .contact ul li img {
-    height: 1.8rem;
+    height: 2.5rem;
   }
 
   .contact ul li a {
     text-decoration: none;
+  }
+  .social {
+    margin-top: 5rem;
   }
 
   .contact ul li p {
@@ -735,6 +742,7 @@ footer {
 
   .hero-details {
     padding-inline: 1rem;
+    padding-top: 7rem;
   }
 
   .hero-content h1 {
@@ -772,6 +780,8 @@ footer {
 
   .images {
     padding-inline: 0rem;
+    display: flex;
+    justify-content: center;
   }
 
   .images .firstAbout {
@@ -782,11 +792,12 @@ footer {
   .images .secAbout {
     position: absolute;
     bottom: -45px;
-    left: 50px;
+    left: 75px;
   }
 
   .content {
-    margin-top: 300px;
+    margin-top: 65rem;
+    min-height: 40dvh;
   }
 
   .content h3 {
@@ -797,11 +808,14 @@ footer {
     white-space: nowrap;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    overflow-y: visible;
+    overflow-y: hidden;
+    padding-inline: 0;
+    justify-content: normal;
   }
 
   .photos-grid .img-container {
     scroll-snap-align: start;
+    padding-inline: 0.5rem;
   }
 
   .photos-grid img {
@@ -810,6 +824,8 @@ footer {
 
   .img-details {
     opacity: 1;
+    white-space: break-spaces;
+    text-align: start;
   }
 
   .bgGradient {
@@ -826,12 +842,20 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+
+  .why-choose div.imgContainer {
+    width: 90%;
+  }
+
   .why-choose .whyChooseImg {
     width: 23rem;
+    margin-left: 0;
   }
+
   .whyChooseBox {
     padding-inline: 4rem;
     margin-top: 4rem;
+    width: 100%;
   }
 
   .whyChooseBox h3 {
@@ -849,5 +873,219 @@ footer {
 
   .bookingContaienr {
     flex-direction: column;
+  }
+
+  form {
+    margin: 0 50px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .secBg {
+    height: 30rem;
+    margin: -195px;
+  }
+
+  .sponsorsImages {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .sponsorsImages img {
+    scroll-snap-align: start;
+  }
+
+  footer {
+    padding-inline: 0;
+    height: 30dvh;
+  }
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+  }
+  .subs {
+    white-space: nowrap;
+    padding-left: 2rem;
+  }
+
+  .footer-footer-names {
+    flex-direction: column;
+    height: auto;
+    padding-block: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-content {
+    margin-top: 15rem;
+  }
+
+  .whyUsBox {
+    width: 85%;
+    margin-inline: 0;
+    flex-direction: column;
+    padding-left: 5rem;
+  }
+
+  .whyUsBoxDetails {
+    padding-bottom: 4rem;
+    width: auto;
+  }
+  .whyUsBoxDetails h3 {
+    width: 45rem;
+    padding-bottom: 1rem;
+  }
+  .whyUsBoxDetails .logisticPara {
+    width: 40rem;
+    padding-block: 0.5rem;
+  }
+
+  .images {
+    padding-inline: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .images .firstAbout {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .images .secAbout {
+    position: absolute;
+    bottom: -45px;
+    left: 75px;
+  }
+
+  .content {
+    margin-top: 44rem;
+    min-height: 25dvh;
+  }
+
+  .photos-grid {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    padding-inline: 0;
+    justify-content: normal;
+    margin-inline: 5rem;
+  }
+
+  .photos-grid .img-container {
+    scroll-snap-align: start;
+    padding-inline: 0.5rem;
+  }
+
+  .photos-grid img {
+    width: 12rem;
+  }
+
+  .img-details {
+    opacity: 1;
+    text-align: start;
+  }
+
+  .bgGradient {
+    height: 15vh;
+  }
+
+  .why-choose {
+    background: linear-gradient(
+      to bottom,
+      var(--primary-sec-color) 15%,
+      var(--secondary-color) 35%
+    );
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why-choose div.imgContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .why-choose .whyChooseImg {
+    width: 50rem;
+    margin-left: 0;
+  }
+
+  .whyChooseBox {
+    padding-inline: 12rem;
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whyChooseBox h3 {
+    font-size: 2.4rem;
+    width: 32rem;
+  }
+
+  .whyChooseBox .smallLabels {
+    align-self: self-start;
+    margin-left: 4rem;
+  }
+
+  .whyChooseBox .whyChooseParag {
+    width: 30rem;
+    font-size: 1rem;
+  }
+
+  .sponsorsImages {
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .sponsorsImages img {
+    scroll-snap-align: start;
+  }
+
+  .bookingSection {
+    padding-inline: 1rem;
+    min-height: auto;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .borderLine {
+    width: 100%;
+  }
+
+  .secBg {
+    background: url(../assets/footer.png);
+    height: 14rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -80px;
+  }
+
+  .lastSection {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .bookingContaienrs {
+    margin-bottom: 0;
+  }
+
+  footer {
+    height: 25vh;
   }
 }
