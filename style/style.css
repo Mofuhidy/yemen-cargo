@@ -960,8 +960,8 @@ footer {
 
   .footer-footer-names {
     flex-direction: column;
-    padding-block: 2rem;
-    font-size: 0.7rem;
+    padding: 1rem;
+    font-size: 0.68rem;
   }
 
   /* design the mobile menu */
