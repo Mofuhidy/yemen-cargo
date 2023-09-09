@@ -45,7 +45,7 @@
 
 ## Live Demo <a name="live-demo"></a>
 
-[Fuhidy's Portfolio](https://mofuhidy.github.io/)
+[Fuhidy's Portfolio](https://mofuhidy.github.io/yemen-cargo/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -120,7 +120,7 @@ You can deploy this project using:
 ### Usage
 
 To run the project, just visit this link:
-https://mofuhidy.github.io/
+https://mofuhidy.github.io/yemen-cargo/
 
 ### Run tests
 
