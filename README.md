@@ -45,7 +45,7 @@
 
 ## Live Demo <a name="live-demo"></a>
 
-[Fuhidy's Portfolio](https://mofuhidy.github.io/yemen-cargo/)
+[Yemen Cargo](https://mofuhidy.github.io/yemen-cargo/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
