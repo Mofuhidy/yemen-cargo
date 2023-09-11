@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --primary-color: #ffbe34;
   --primary-sec-color: #091242;
@@ -40,6 +40,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+[dir="rtl"] button {
+  font-family: "Rubik", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -70,6 +74,11 @@ nav {
   padding-inline: 4rem;
 }
 
+.lang {
+  background: none;
+  color: white;
+}
+
 .navInfoMobile,
 .cancelIcon {
   display: none;
@@ -95,14 +104,14 @@ header .firstNav {
   text-decoration: none;
 }
 
-.contact ul li p {
+[dir="rtl"] .contact ul li p {
   color: #fff;
   font-size: 0.9rem;
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   line-height: 1.18rem;
   margin: 0;
-  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 header .secNav {
@@ -117,10 +126,11 @@ header .secNav {
 .secNav ul li > img {
   height: 1.19rem;
 }
+
 .nav-items a {
   text-decoration: none;
   color: #fff;
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
@@ -166,11 +176,11 @@ li.nav-items:not(:last-child)::after {
   height: 75%;
 }
 
-.hero-content {
+[dir="rtl"] .hero-content {
   margin-top: 4rem;
-  padding-left: 10rem;
+  padding-right: 10rem;
   display: flex;
-  width: 35.6rem;
+  width: 38rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
@@ -185,7 +195,7 @@ li.nav-items:not(:last-child)::after {
   line-height: normal;
 }
 
-.hero-content p {
+[dir="rtl"] .hero-content p {
   color: #fff;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -196,7 +206,8 @@ li.nav-items:not(:last-child)::after {
   padding: 0.1875rem 0.5625rem;
   width: 18.3125rem;
   align-items: center;
-  border-left: var(--primary-color) 0.25rem solid;
+  border-right: var(--primary-color) 0.25rem solid;
+  border-left: none;
 }
 
 .services {
@@ -206,17 +217,18 @@ li.nav-items:not(:last-child)::after {
   gap: 2rem;
 }
 
-.smallLabels {
+[dir="rtl"] .smallLabels {
   color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 0.44rem;
+  padding-right: 0.44rem;
   background-color: var(--secondary-color);
-  border-left: var(--primary-color) 0.25rem solid;
-  width: 7.5625rem;
+  border-right: var(--primary-color) 0.25rem solid;
+  border-left: none;
+  width: fit-content;
   height: 1.4375rem;
 }
 
@@ -240,13 +252,6 @@ li.nav-items:not(:last-child)::after {
   gap: 3px;
 }
 
-.service .line {
-  width: 1rem;
-  height: auto;
-  background: var(--secondary-color);
-  margin-inline: 1rem;
-}
-
 .service .icon {
   width: 5rem;
   height: 7.1875rem;
@@ -268,7 +273,7 @@ li.nav-items:not(:last-child)::after {
 
 .service p {
   color: var(--text-paragraph-color);
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -287,9 +292,10 @@ li.nav-items:not(:last-child)::after {
   height: 31rem;
 }
 
-.whyUsBox {
+[dir="rtl"] .whyUsBox {
   padding-top: 5rem;
-  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-left: 0rem;
   height: 45rem;
   background-color: #fff;
   position: absolute;
@@ -311,7 +317,7 @@ li.nav-items:not(:last-child)::after {
 
 .whyUsBoxDetails .logisticPara {
   color: var(--text-paragraph-color);
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
@@ -323,15 +329,16 @@ li.nav-items:not(:last-child)::after {
   height: 30rem;
 }
 
-.images .firstAbout {
+[dir="rtl"] .images .firstAbout {
   width: 28rem;
   height: 23rem;
   flex-shrink: 0;
 }
-.images .secAbout {
+
+[dir="rtl"] .images .secAbout {
   position: absolute;
   bottom: 0;
-  left: -100px;
+  left: 170px;
 }
 
 .prosDetails .prosIcon img {
@@ -339,7 +346,7 @@ li.nav-items:not(:last-child)::after {
   margin-right: 0.3rem;
 }
 
-.prosDetails p {
+[dir="rtl"] .prosDetails p {
   color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -347,6 +354,7 @@ li.nav-items:not(:last-child)::after {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 0;
+  padding-right: 0.8rem;
 }
 
 .content {
@@ -410,7 +418,7 @@ li.nav-items:not(:last-child)::after {
 
 .img-details p {
   color: #ffb629;
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
@@ -426,9 +434,9 @@ li.nav-items:not(:last-child)::after {
   z-index: -1;
 }
 
-.why-choose {
+[dir="rtl"] .why-choose {
   background: linear-gradient(
-    to right,
+    to left,
     var(--primary-sec-color) 50%,
     var(--secondary-color) 50%
   );
@@ -436,9 +444,10 @@ li.nav-items:not(:last-child)::after {
   padding-block: 10rem;
 }
 
-.why-choose .whyChooseImg {
+[dir="rtl"] .why-choose .whyChooseImg {
   width: 45rem;
-  margin-left: 5rem;
+  margin-left: 0rem;
+  margin-right: 5rem;
 }
 
 .whyChooseBox h3 {
@@ -454,7 +463,7 @@ li.nav-items:not(:last-child)::after {
 
 .whyChooseBox .whyChooseParag {
   color: var(--text-paragraph-color);
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
@@ -463,8 +472,9 @@ li.nav-items:not(:last-child)::after {
   padding-bottom: 1.5rem;
 }
 
-.whyChooseBox {
-  padding-left: 6rem;
+[dir="rtl"] .whyChooseBox {
+  padding-left: 0rem;
+  padding-right: 6rem;
   width: 50%;
 }
 
@@ -494,7 +504,7 @@ li.nav-items:not(:last-child)::after {
   padding-inline: 10rem;
 }
 
-.bookingContaienr .smallLabels {
+[dir="rtl"] .bookingContaienr .smallLabels {
   color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
@@ -503,8 +513,9 @@ li.nav-items:not(:last-child)::after {
   line-height: normal;
   padding-left: 0.44rem;
   background: rgba(168, 169, 175, 0.25);
-  border-left: var(--primary-sec-color) 0.25rem solid;
-  width: 6rem;
+  border-left: none;
+  border-right: var(--primary-sec-color) 0.25rem solid;
+  width: max-content;
 }
 
 .bookingContaienr h3 {
@@ -524,7 +535,7 @@ li.nav-items:not(:last-child)::after {
 .bookingInfoDetails p {
   margin-bottom: 0;
   color: var(--text-heading-color);
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -574,7 +585,7 @@ button {
   background: var(--gradient);
 
   color: var(--text-heading-color);
-  font-family: "Krub";
+  font-family: "Cairo";
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -646,14 +657,15 @@ footer {
   padding-top: 5rem;
 }
 
-.footerInfoDetails {
-  padding-left: 1rem;
+[dir="rtl"] .footerInfoDetails {
+  padding-left: 0rem;
+  padding-right: 1rem;
 }
 
 .footerInfoDetails p {
   margin-bottom: 0;
   color: #fff;
-  font-family: "Krub", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
@@ -692,21 +704,16 @@ footer {
   color: white;
 }
 
-.imgContainer {
+[dir="rtl"] .imgContainer {
   width: 50%;
-  margin-right: 0rem;
-  margin-left: 0rem;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 768px) {
   .hero {
     height: 100dvh;
   }
-  .lang {
-    background: none;
-    color: white;
-    width: 50%;
-  }
+
   nav {
     padding-inline: 2rem;
   }
@@ -735,20 +742,21 @@ footer {
     margin-top: 7rem;
   }
 
-  .contact ul li p {
+  [dir="rtl"] .contact ul li p {
     color: #fff;
     font-size: 0.7rem;
-    font-family: "Krub", sans-serif;
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     line-height: 1.18rem;
     margin: 0;
-    margin-left: 0.8rem;
+    margin-left: 0rem;
+    margin-right: 0.8rem;
   }
 
-  .hero-content {
+  [dir="rtl"] .hero-content {
     margin-top: 5rem;
-    padding-left: 0rem;
-    margin-left: 0;
+    padding-right: 0rem;
+    margin-right: 0;
     display: flex;
     width: 18rem;
   }
@@ -779,10 +787,11 @@ footer {
     height: 14dvh;
   }
 
-  .whyUsBox {
+  [dir="rtl"] .whyUsBox {
     margin-inline: 0;
     flex-direction: column;
-    padding-left: 1rem;
+    padding-left: 0rem;
+    padding-right: 1rem;
     top: 145px;
     width: 100%;
   }
@@ -798,17 +807,16 @@ footer {
     justify-content: center;
   }
 
-  .images .firstAbout {
+  [dir="rtl"] .images .firstAbout {
     width: 20rem;
     height: 20rem;
   }
 
-  .images .secAbout {
+  [dir="rtl"] .images .secAbout {
     position: absolute;
     bottom: -45px;
-    left: 65px;
+    left: 80px;
   }
-
   .content {
     margin-top: 65rem;
     min-height: 40dvh;
@@ -854,7 +862,7 @@ footer {
     height: 35vh;
   }
 
-  .why-choose {
+  [dir="rtl"] .why-choose {
     height: 100dvh;
     background: linear-gradient(
       to bottom,
@@ -871,12 +879,12 @@ footer {
     justify-content: center;
   }
 
-  .why-choose .whyChooseImg {
-    width: 23rem;
-    margin-left: 0;
+  [dir="rtl"] .why-choose .whyChooseImg {
+    width: 22rem;
+    margin-right: -50px;
   }
 
-  .whyChooseBox {
+  [dir="rtl"] .whyChooseBox {
     padding-inline: 4rem;
     margin-top: 4rem;
     padding-bottom: 5rem;
@@ -901,12 +909,17 @@ footer {
     width: 21.5rem;
   }
 
+  [dir="rtl"] .featureDetails p {
+    padding-right: 0.8rem !important;
+    padding-left: 0rem !important;
+  }
+
   .bookingContaienr {
     flex-direction: column;
   }
 
-  .bookingDetails {
-    margin-left: 3rem;
+  [dir="rtl"] .bookingDetails {
+    margin-inline: 3rem;
   }
 
   input {
@@ -941,6 +954,12 @@ footer {
     padding-inline: 0;
   }
 
+  [dir="rtl"] .subs {
+    white-space: nowrap;
+    padding-left: 4rem;
+    margin-right: 0 !important;
+  }
+
   .subs h2 {
     font-size: 1.3rem;
   }
@@ -954,14 +973,12 @@ footer {
   .footerInfo {
     padding-block: 2.5rem;
   }
+  [dir="rtl"] .footerInfo li {
+    width: 75%;
+  }
 
   .features {
     margin-left: -10px;
-  }
-
-  .subs {
-    white-space: nowrap;
-    padding-left: 2rem;
   }
 
   .footer-footer-names {
@@ -978,7 +995,7 @@ footer {
     gap: 20px;
   }
 
-  .navInfoMobile {
+  [dir="rtl"] .navInfoMobile {
     min-height: 100vh;
     width: 100%;
     z-index: 1;
@@ -986,16 +1003,18 @@ footer {
     padding-top: 90px;
     position: relative;
     transition: all 0.5s;
+    padding-left: 0;
+    padding-right: 3rem;
   }
 
   body.active {
     overflow-y: hidden;
   }
 
-  .cancelIcon {
+  [dir="rtl"] .cancelIcon {
     position: absolute;
     top: 35px;
-    right: 30px;
+    right: 23rem;
   }
 
   .cancelIcon.active,
@@ -1023,9 +1042,6 @@ footer {
   li.nav-items:not(:last-child)::after {
     content: none;
   }
-  .whyUsBox {
-    padding-inline: 2rem;
-  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1033,11 +1049,16 @@ footer {
     margin-top: 15rem;
   }
 
-  .whyUsBox {
+  [dir="rtl"] .whyChooseBox {
+    width: 60%;
+  }
+
+  [dir="rtl"] .whyUsBox {
     width: 85%;
     margin-inline: 0;
     flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 0rem;
+    padding-right: 5rem;
   }
 
   .whyUsBoxDetails {
@@ -1059,7 +1080,7 @@ footer {
     justify-content: center;
   }
 
-  .images .firstAbout {
+  [dir="rtl"] .images .firstAbout {
     width: 20rem;
     height: 20rem;
   }
@@ -1103,7 +1124,7 @@ footer {
     height: 15vh;
   }
 
-  .why-choose {
+  [dir="rtl"] .why-choose {
     background: linear-gradient(
       to bottom,
       var(--primary-sec-color) 15%,
@@ -1119,9 +1140,10 @@ footer {
     justify-content: center;
   }
 
-  .why-choose .whyChooseImg {
+  [dir="rtl"] .why-choose .whyChooseImg {
     width: 50rem;
     margin-left: 0;
+    margin-right: -50px;
   }
 
   .whyChooseBox {
@@ -1191,5 +1213,10 @@ footer {
 
   footer {
     height: 25vh;
+  }
+
+  [dir="rtl"] .featureDetails p {
+    padding-right: 0.8rem !important;
+    padding-left: 0rem !important;
   }
 }

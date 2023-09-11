@@ -8,6 +8,7 @@
     <link rel="icon" type="image/ico" href="./assets/icons/ship_cargo_shipping_export_transportation_icon_188951.ico" />
 
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-rtl.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -24,7 +25,7 @@
                         <li class="d-flex align-items-center">
                             <img loading="lazy" src="./assets/icons/Icon.svg" alt="email icon">
                             <div class="detils">
-                                <p>Email</p>
+                                <p data-translate="email">Email</p>
                                 <a href="mailto:info@yemencargo.com">
                                     <p>info@yemencargo.com</p>
                                 </a>
@@ -33,23 +34,35 @@
                         <li class="d-flex align-items-center">
                             <img loading="lazy" src="./assets/icons/phone.svg" alt="phone icon">
                             <div class="detils">
-                                <p>Call Us</p>
+                                <p data-translate="call">Call Us</p>
                                 <a href="tel:+967773646990">
                                     <p>(+967) 773646990</p>
                                 </a>
                             </div>
                         </li>
+                        <li class="d-flex align-items-center rounded-4 p-1">
+                            <select class="p-1 mt-2 lang">
+                                <option value="en" selected>English</option>
+                                <option value="ar">العربية</option>
+                            </select>
+                        </li>
                     </ul>
-                    <img src="./assets/icons/Union.svg" alt="menu burger" class="menuIcon d-flex  d-md-none " />
+                    <div class="d-flex flex-row-reverse d-md-none align-items-baseline gap-2">
+                        <img src="./assets/icons/Union.svg" alt="menu burger" class="menuIcon d-flex d-md-none" />
+                        <select class="p-1 mt-2 lang d-flex d-md-none" id="langMob">
+                            <option value="en" selected>English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </div>
                 </div>
             </nav>
 
             <ul class="navInfoMobile">
-                <li class="nav-items mobileLinks "><a href="#hero">Home</a></li>
-                <li class="nav-items mobileLinks"><a href="#about">About</a></li>
-                <li class="nav-items mobileLinks"><a href="#services">Services</a></li>
-                <li class="nav-items mobileLinks"><a href="#booking">Booking</a></li>
-                <li class="nav-items mobileLinks"><a href="#contact">Contact</a></li>
+                <li class="nav-items mobileLinks "><a href="#hero" data-translate="home">Home</a></li>
+                <li class="nav-items mobileLinks"><a href="#about" data-translate="about">About</a></li>
+                <li class="nav-items mobileLinks"><a href="#services" data-translate="services">Services</a></li>
+                <li class="nav-items mobileLinks"><a href="#booking" data-translate="booking">Booking</a></li>
+                <li class="nav-items mobileLinks"><a href="#contact" data-translate="contact">Contact</a></li>
 
                 <ul class="d-flex  mb-0 gap-4 ">
                     <li class="d-flex align-items-center">
@@ -65,17 +78,18 @@
 
                     </li>
                 </ul>
+
             </ul>
             <img src="./assets/icons/Icon - Cancel.svg" alt="cancel Icon" class="cancelIcon" />
 
 
             <nav class="secNav d-none d-md-flex align-items-center justify-content-between">
                 <ul class="mb-0 ps-0 d-flex justify-content-center align-items-center">
-                    <li class="nav-items "><a href="#hero">Home</a></li>
-                    <li class="nav-items"><a href="#about">About</a></li>
-                    <li class="nav-items"><a href="#services">Services</a></li>
-                    <li class="nav-items"><a href="#booking">Booking</a></li>
-                    <li class="nav-items"><a href="#contact">Contact</a></li>
+                    <li class="nav-items "><a href="#hero" data-translate="home">Home</a></li>
+                    <li class="nav-items"><a href="#about" data-translate="about">About</a></li>
+                    <li class="nav-items"><a href="#services" data-translate="services">Services</a></li>
+                    <li class="nav-items"><a href="#booking" data-translate="booking">Booking</a></li>
+                    <li class="nav-items"><a href="#contact" data-translate="contact">Contact</a></li>
                 </ul>
 
                 <ul class="social d-flex justify-content-center mb-0 align-items-center gap-3">
@@ -93,9 +107,8 @@
         </header>
         <div class="hero-details d-flex justify-content-around d-md-block mt-5 mt-md-0 " id="hero">
             <article class="hero-content">
-                <p>Logistics &#38; Supply Chain Solutions</p>
-                <h1>Yemen Cargo, Your Gateway to any Destination in the World
-                </h1>
+                <p data-translate="logistics">Logistics &#38; Supply Chain Solutions</p>
+                <h1 data-translate="yemenCargo">Yemen Cargo, Your Gateway to any Destination in the World</h1>
             </article>
 
             <ul class="social d-flex d-md-none flex-column justify-content-center mb-0 align-items-center gap-3">
@@ -116,8 +129,8 @@
 
     <section class="services d-flex flex-column flex-md-row justify-content-center align-items-center" id="services">
         <div class="headerServices d-flex flex-column justify-content-between">
-            <p class="smallLabels">What we Do</p>
-            <h3>Safe &#38; Reliable Cargo Solutions</h3>
+            <p class="smallLabels" data-translate="whatWeDo">What we Do</p>
+            <h3 data-translate="safe">Safe &#38; Reliable Cargo Solutions</h3>
             <div class="opacity-0"></div>
         </div>
         <div class="servicesCard row row-gap-4">
@@ -127,8 +140,9 @@
                     <div class="icon"><img loading="lazy" src="./assets/icons/ship.svg" alt="ship icon"></div>
                     <div class="line"></div>
                     <div class="details">
-                        <h5>Sea Freight</h5>
-                        <p>With our sea freight services, we provide cost-effective solutions for your ocean shipments.
+                        <h5 data-translate="seaFreight">Sea Freight</h5>
+                        <p data-translate="seaFreightPara">With our sea freight services, we provide cost-effective
+                            solutions for your ocean shipments.
                             From full container loads
                             (FCL) to less than container loads (LCL), we offer flexible options and efficient handling
                             for your goods</p>
@@ -141,8 +155,9 @@
                     <div class="icon"><img loading="lazy" src="./assets/icons/building.svg" alt="Warehouse icon"></div>
                     <div class="line"></div>
                     <div class="details">
-                        <h5>Warehousing and Distribution</h5>
-                        <p>We provide secure warehousing facilities for short-term or long-term storage needs. Our
+                        <h5 data-translate="warehousing">Warehousing and Distribution</h5>
+                        <p data-translate="warehousingPara">We provide secure warehousing facilities for short-term or
+                            long-term storage needs. Our
                             advanced inventory management
                             system ensures accurate tracking and efficient distribution of your goods.</p>
                     </div>
@@ -156,8 +171,9 @@
                     <div class="icon"><img loading="lazy" src="./assets/icons/plane.svg" alt="Plane icon"></div>
                     <div class="line"></div>
                     <div class="details">
-                        <h5>Air Freight</h5>
-                        <p>Our air freight services offer fast and efficient transportation for time-sensitive and
+                        <h5 data-translate="airFreight">Air Freight</h5>
+                        <p data-translate="airFreightPara">Our air freight services offer fast and efficient
+                            transportation for time-sensitive and
                             high-value shipments. With
                             strategic partnerships with major airlines, we ensure reliable connections and competitive
                             rates to deliver your cargo
@@ -172,8 +188,9 @@
                     <div class="icon"><img loading="lazy" src="./assets/icons/truck.svg" alt="truck icon"></div>
                     <div class="line"></div>
                     <div class="details">
-                        <h5>Road Freight</h5>
-                        <p>Our road freight services cover domestic and cross-border transportation, offering a reliable
+                        <h5 data-translate="roadFreight">Road Freight</h5>
+                        <p data-translate="roadFreightPara">Our road freight services cover domestic and cross-border
+                            transportation, offering a reliable
                             and secure solution for
                             your land-based logistics requirements.</p>
                     </div>
@@ -186,8 +203,8 @@
         <div class="bg"></div>
         <div class="whyUsBox d-flex justify-content-between ">
             <div class="whyUsBoxDetails">
-                <p class="smallLabels">Why Us</p>
-                <h3>We provide full range global logistics solution</h3>
+                <p class="smallLabels" data-translate="whyUs">Why Us</p>
+                <h3 data-translate="provideFull">We provide full range global logistics solution</h3>
                 <p class="logisticPara">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"
                         class="pe-1">
@@ -202,11 +219,14 @@
                                 <stop offset="1" stop-color="#FFD7A6" />
                             </linearGradient>
                         </defs>
-                    </svg>Reliable Global Network: Our extensive network of trusted partners and agents worldwide allows
-                    us to
-                    provide seamless
-                    transportation solutions across borders, ensuring your shipments reach their destination safely and
-                    on time.
+                    </svg>
+                    <span data-translate="logisticPara1">Reliable Global Network: Our extensive network of trusted
+                        partners and agents worldwide allows
+                        us to
+                        provide seamless
+                        transportation solutions across borders, ensuring your shipments reach their destination safely
+                        and
+                        on time.</span>
                 </p>
                 <p class="mt-3 logisticPara">
 
@@ -223,11 +243,14 @@
                                 <stop offset="1" stop-color="#FFD7A6" />
                             </linearGradient>
                         </defs>
-                    </svg>Personalized Approach: We understand that every client has unique requirements. That's why we
-                    take a
-                    personalized
-                    approach to tailor our services to suit your specific needs, providing you with customized logistics
-                    solutions.
+                    </svg>
+                    <span data-translate="logisticPara2">Personalized Approach: We understand that every client has
+                        unique requirements. That's why we
+                        take a
+                        personalized
+                        approach to tailor our services to suit your specific needs, providing you with customized
+                        logistics
+                        solutions.</span>
                 </p>
 
                 <div class="pros">
@@ -235,13 +258,13 @@
                         <div class="prosIcon">
                             <img loading="lazy" src="./assets/icons/box.svg" alt="box icon">
                         </div>
-                        <p>Commitment to Quality and Safety</p>
+                        <p data-translate="commitment">Commitment to Quality and Safety</p>
                     </div>
                     <div class="prosDetails d-flex align-items-center">
                         <div class="prosIcon">
                             <img loading="lazy" src="./assets/icons/money.svg" alt="box icon">
                         </div>
-                        <p>Optimized Travel Cost</p>
+                        <p data-translate="costSaving">Optimized Travel Cost</p>
                     </div>
                 </div>
             </div>
@@ -253,42 +276,42 @@
     </section>
 
     <article class="content">
-        <h3>Transporting Across The World</h3>
+        <h3 data-translate="transporting">Transporting Across The World</h3>
 
         <div class="photos-grid">
             <div class="img-container">
                 <img loading="lazy" src="./assets/1.png" alt="Liquid Transportation image">
                 <div class="img-details">
-                    <h5>Liquid Transportation</h5>
-                    <p>Premium Tankers</p>
+                    <h5 data-translate="liquid">Liquid Transportation</h5>
+                    <p data-translate="liquidPara">Premium Tankers</p>
                 </div>
             </div>
             <div class="img-container">
                 <img loading="lazy" src="./assets/2.png" alt="Packaging Solutions image">
                 <div class="img-details">
-                    <h5>Packaging Solutions</h5>
-                    <p>Warehouse Management</p>
+                    <h5 data-translate="packaging">Packaging Solutions</h5>
+                    <p data-translate="packagingPara">Warehouse Management</p>
                 </div>
             </div>
             <div class="img-container">
                 <img loading="lazy" src="./assets/3.png" alt="Contract Logistics image">
                 <div class="img-details">
-                    <h5>Contract Logistics</h5>
-                    <p>Road Transportation</p>
+                    <h5 data-translate="contractLogistics">Contract Logistics</h5>
+                    <p data-translate="contractLogisticsPara">Road Transportation</p>
                 </div>
             </div>
             <div class="img-container">
                 <img loading="lazy" src="./assets/4.png" alt="Warehouse &#38; Distribution image">
                 <div class="img-details">
-                    <h5>Warehouse &#38; Distribution</h5>
-                    <p>Large Warehouse</p>
+                    <h5 data-translate="warehouse">Warehouse &#38; Distribution</h5>
+                    <p data-translate="warehousePara">Large Warehouse</p>
                 </div>
             </div>
             <div class="img-container">
                 <img loading="lazy" src="./assets/5.png" alt="Specialized Transport image">
                 <div class="img-details">
-                    <h5>Specialized Transport</h5>
-                    <p>Ocean Transports</p>
+                    <h5 data-translate="specializedTransport">Specialized Transport</h5>
+                    <p data-translate="specializedTransportPara">Ocean Transports</p>
                 </div>
             </div>
         </div>
@@ -297,13 +320,14 @@
     </article>
 
     <section class="why-choose d-flex align-items-center">
-        <div class="ms-md-5 imgContainer">
+        <div class=" imgContainer">
             <img loading="lazy" src="./assets/bgFooter.png" alt="containers image" class="whyChooseImg">
         </div>
         <div class="whyChooseBox">
-            <p class="smallLabels">Why choose</p>
-            <h3>We create opportunity to reach potential</h3>
-            <p class="whyChooseParag">Leverage agile frameworks to provide a robust synopsis for strategy foster
+            <p class="smallLabels" data-translate="whyChoose">Why choose</p>
+            <h3 data-translate="weCreate">We create opportunity to reach potential</h3>
+            <p class="whyChooseParag" data-translate="weCreatePara">Leverage agile frameworks to provide a robust
+                synopsis for strategy foster
                 collaborative thinking to
                 further the overall
                 value proposition.</p>
@@ -312,30 +336,30 @@
                 <div class="d-flex flex-column gap-2">
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/box.svg" alt="box icon" class="featureIcon">
-                        <p class="mb-0 ps-3">Safe Package</p>
+                        <p class="mb-0 ps-3" data-translate="safePackage">Safe Package</p>
                     </div>
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/global.svg" alt="global icon" class="featureIcon">
-                        <p class="mb-0 ps-3">Global Tracking</p>
+                        <p class="mb-0 ps-3" data-translate="globalTracking">Global Tracking</p>
                     </div>
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/clock.svg" alt="clock icon" class="featureIcon">
-                        <p class="mb-0 ps-3">In Time Delivery</p>
+                        <p class="mb-0 ps-3" data-translate="inTimeDelivery">In Time Delivery</p>
                     </div>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/shipBg.svg" alt="ship icon" class="featureIcon">
-                        <p class="mb-0 ps-3">Ship Everyware</p>
+                        <p class="mb-0 ps-3" data-translate="shipEveryware">Ship Everyware</p>
                     </div>
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/customerService.svg" alt="headphones icon"
                             class="featureIcon">
-                        <p class="mb-0 ps-3">24/7 Support</p>
+                        <p class="mb-0 ps-3" data-translate="24/7Support">24/7 Support</p>
                     </div>
                     <div class="featureDetails d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/coin.svg" alt="coin icon" class="featureIcon">
-                        <p class="mb-0 ps-3">Transparant Pricing</p>
+                        <p class="mb-0 ps-3" data-translate="transparantPricing">Transparant Pricing</p>
                     </div>
                 </div>
 
@@ -346,13 +370,13 @@
     <section class="bookingSection " id="booking">
         <div class="container bookingContaienr d-flex justify-content-center align-items-center gap-4 pt-4">
             <div class="w-md-50 bookingDetails">
-                <p class="smallLabels">Booking</p>
-                <h3>Getting Your Booking Now</h3>
+                <p class="smallLabels" data-translate="booking">Booking</p>
+                <h3 data-translate="bookingNow">Get Your Booking Now</h3>
                 <ul class="bookingInfo gap-4 d-flex flex-column mt-4 ps-0">
                     <li class="d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/Icon.svg" alt="email icon">
                         <div class="bookingInfoDetails">
-                            <p>Email</p>
+                            <p data-translate="email">Email</p>
                             <a href="mailto:info@yemencargo.com">
                                 <p>info@yemencargo.com</p>
                             </a>
@@ -361,7 +385,7 @@
                     <li class="d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/phone.svg" alt="phone icon">
                         <div class="bookingInfoDetails">
-                            <p>Call Us</p>
+                            <p data-translate="call">Call Us</p>
                             <a href="tel:+967773646990">
                                 <p>(+967) 773646990</p>
                             </a>
@@ -370,8 +394,8 @@
                     <li class="d-flex align-items-center">
                         <img loading="lazy" src="./assets/icons/clock copy.svg" alt="clock icon">
                         <div class="bookingInfoDetails">
-                            <p>Mon - Sat 9.00 - 18.00</p>
-                            <p>Sunday Closed</p>
+                            <p data-translate="open">Sat - Thu 9:00 - 18:00</p>
+                            <p data-translate="close">Friday Closed</p>
                         </div>
                     </li>
                 </ul>
@@ -379,26 +403,26 @@
             <div class="w-md-75 pt-5 ms-md-5 ">
                 <form class="d-flex flex-column gap-3">
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="Full name" required>
-                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Full name" required data-translate="fullName">
+                        <input type="email" placeholder="Email" required data-translate="email">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="tel" placeholder="Phone Number" required>
-                        <input type="text" placeholder="City" required>
+                        <input type="tel" placeholder="Phone Number" required data-translate="phoneNumber">
+                        <input type="text" placeholder="Address" required data-translate="address">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="From (Country) / (Port)" required>
-                        <input type="text" placeholder="To (Country) / (Port)" required>
+                        <input type="text" placeholder="From (Country) / (Port)" required data-translate="from">
+                        <input type="text" placeholder="To (Country) / (Port)" required data-translate="to">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="Commodity" required>
-                        <input type="text" placeholder="Container type and size" required>
+                        <input type="text" placeholder="Commodity" required data-translate="commodity">
+                        <input type="text" placeholder="Container type and size" required data-translate="container">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="number" placeholder="Number of container" required>
-                        <input type="text" placeholder="Cargo weight per conainer" required>
+                        <input type="number" placeholder="Number of containers" required data-translate="containers">
+                        <input type="text" placeholder="Cargo weight per conainer" requiredd data-translate="weight">
                     </div>
-                    <button type="submit">Booking now</button>
+                    <button type="submit" data-translate="book">Book now</button>
                 </form>
             </div>
         </div>
@@ -419,7 +443,7 @@
                 <img loading="lazy" class="logo" src="./assets/Logo.svg" alt="Yemen cargo logo">
             </div>
             <div class="subs pe-5 me-5">
-                <h2>Contact us</h2>
+                <h2 data-translate="contactUs">Contact us</h2>
             </div>
         </nav>
         <footer>
@@ -427,7 +451,7 @@
                 <li class="ps-4 d-flex align-items-center">
                     <img loading="lazy" src="./assets/icons/Icon.svg" alt="email icon">
                     <div class="footerInfoDetails">
-                        <p>Email</p>
+                        <p data-translate="email">Email</p>
                         <a href="mailto:info@yemencargo.com">
                             <p>info@yemencargo.com</p>
                         </a>
@@ -436,7 +460,7 @@
                 <li class="d-flex align-items-center">
                     <img loading="lazy" src="./assets/icons/phone.svg" alt="phone icon">
                     <div class="footerInfoDetails">
-                        <p>Call Us</p>
+                        <p data-translate="call">Call Us</p>
                         <a href="tel:+967773646990">
                             <p>(+967) 773646990</p>
                         </a>
@@ -447,18 +471,20 @@
     </section>
 
     <div class="footer-footer">
-        <p class="footer-footer-names">© 2023 Yemen Cargo | Designed by
-            <a href="#" target="_blank">mo7shahari </a> - Powered by
+        <p class="footer-footer-names">© 2023 Yemen Cargo | <span data-translate="designedBy" class="px-1"> Designed by
+            </span>
+            <a href="#" target="_blank">mo7shahari </a> <span data-translate="poweredBy"> Powered by </span>
             <a href="#" target="_blank">
-                Fuhidy.
+                Fuhidy
             </a>
         </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="./js/index.js"></script>
+    <script src="./js/arLang.js" type="module"></script>
 </body>
 
 </html>
