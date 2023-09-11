@@ -8,6 +8,7 @@
     <link rel="icon" type="image/ico" href="./assets/icons/ship_cargo_shipping_export_transportation_icon_188951.ico" />
 
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/style-rtl.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
@@ -15,12 +16,6 @@
 <body>
     <section class="hero">
         <header>
-
-            <select class="p-1 mt-2" id="lang">
-                <option value="en" selected>English</option>
-                <option value="ar">العربية</option>
-            </select>
-
             <nav class="firstNav d-flex align-items-center justify-content-between">
                 <div class="logo">
                     <img loading="lazy" class="logo" src="./assets/Logo.svg" alt="Yemen cargo logo">
@@ -45,8 +40,20 @@
                                 </a>
                             </div>
                         </li>
+                        <li class="d-flex align-items-center rounded-4 p-1">
+                            <select class="p-1 mt-2 lang">
+                                <option value="en" selected>English</option>
+                                <option value="ar">العربية</option>
+                            </select>
+                        </li>
                     </ul>
-                    <img src="./assets/icons/Union.svg" alt="menu burger" class="menuIcon d-flex  d-md-none " />
+                    <div class="d-flex flex-row-reverse d-md-none align-items-baseline gap-2">
+                        <img src="./assets/icons/Union.svg" alt="menu burger" class="menuIcon d-flex d-md-none" />
+                        <select class="p-1 mt-2 lang d-flex d-md-none" id="langMob">
+                            <option value="en" selected>English</option>
+                            <option value="ar">العربية</option>
+                        </select>
+                    </div>
                 </div>
             </nav>
 
@@ -71,6 +78,7 @@
 
                     </li>
                 </ul>
+
             </ul>
             <img src="./assets/icons/Icon - Cancel.svg" alt="cancel Icon" class="cancelIcon" />
 
@@ -312,7 +320,7 @@
     </article>
 
     <section class="why-choose d-flex align-items-center">
-        <div class="ms-md-5 imgContainer">
+        <div class=" imgContainer">
             <img loading="lazy" src="./assets/bgFooter.png" alt="containers image" class="whyChooseImg">
         </div>
         <div class="whyChooseBox">
@@ -463,17 +471,18 @@
     </section>
 
     <div class="footer-footer">
-        <p class="footer-footer-names">© 2023 Yemen Cargo | <span data-translate="designedBy"> Designed by </span>
-            <a href="#" target="_blank">mo7shahari </a> - <span data-translate="poweredBy"> Powered by </span>
+        <p class="footer-footer-names">© 2023 Yemen Cargo | <span data-translate="designedBy" class="px-1"> Designed by
+            </span>
+            <a href="#" target="_blank">mo7shahari </a> <span data-translate="poweredBy"> Powered by </span>
             <a href="#" target="_blank">
                 Fuhidy
             </a>
         </p>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="./js/index.js"></script>
     <script src="./js/arLang.js" type="module"></script>
 </body>

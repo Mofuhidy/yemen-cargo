@@ -60,8 +60,8 @@ var translations = {
   "container": "نوع الحاوية وحجمها: ( 20 جاف – 40 جاف – 20 مبرد – 40 مبرد – 40 HC)",
   "containers": "عدد الحاويات",
   "weight": "وزن البضاعة لكل حاوية",
-  "poweredBy": "صُنع بحب",
-  "designedBy": "صُمم بحب",
+  "poweredBy": " صُنع بحب بواسطة ",
+  "designedBy": " صُمم بحب بواسطة  ",
 }, 
  en: {
   "home": "Home",
@@ -151,8 +151,8 @@ var translations = {
   "container": "Container type and size: (20 Dry - 40 Dry  -  20 Reefer -  40 Reefer  -  40 HC)",
   "containers": "Number of containers",
   "weight": "Cargo weight per conainer",
-  "poweredBy": "Powered by",
-  "designedBy": "Designed by",
+  "poweredBy": "| Powered by",
+  "designedBy": "| Designed by",
  }
 };
 
