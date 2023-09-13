@@ -824,6 +824,7 @@ footer {
     scroll-snap-type: x mandatory;
     overflow-y: hidden;
     padding-inline: 0;
+    margin-inline: 0.75rem;
     justify-content: normal;
   }
 
@@ -898,7 +899,7 @@ footer {
   }
 
   .bookingContaienr h3 {
-    width: 21.5rem;
+    width: 20.5rem;
   }
 
   .bookingContaienr {
