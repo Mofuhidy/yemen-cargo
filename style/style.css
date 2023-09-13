@@ -669,19 +669,22 @@ footer {
   color: #fff;
 }
 
-.footer-footer-names {
+.footer-footer {
   height: 75px;
   border-top: 1px solid var(--text-paragraph-color);
   background-color: var(--primary-sec-color);
+  color: white;
+}
+
+.footer-footer-names {
   padding-top: 3px;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
-.footer-footer-names a {
+.footer-footer a {
   text-decoration: none;
   color: white;
   margin-inline: 5px;
@@ -798,6 +801,10 @@ footer {
     justify-content: center;
   }
 
+  .whyUsBoxDetails h3 {
+    width: 20rem;
+  }
+
   .images .firstAbout {
     width: 20rem;
     height: 20rem;
@@ -806,7 +813,7 @@ footer {
   .images .secAbout {
     position: absolute;
     bottom: -45px;
-    left: 65px;
+    left: 45px;
   }
 
   .content {
@@ -873,15 +880,20 @@ footer {
   }
 
   .why-choose .whyChooseImg {
-    width: 23rem;
+    width: 21rem;
     margin-left: 0;
   }
 
   .whyChooseBox {
-    padding-inline: 4rem;
+    padding-inline: 1.8rem;
     margin-top: 4rem;
     padding-bottom: 5rem;
     width: 100%;
+  }
+
+  .features {
+    margin-inline: 0.1rem;
+    margin-left: -10px;
   }
 
   .whyChooseBox h3 {
@@ -954,10 +966,6 @@ footer {
 
   .footerInfo {
     padding-block: 2.5rem;
-  }
-
-  .features {
-    margin-left: -10px;
   }
 
   .subs {

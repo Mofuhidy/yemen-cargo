@@ -154,7 +154,7 @@ var translations = {
   "containers": "Number of containers",
   "weight": "Cargo weight per conainer",
   "poweredBy": "| Powered by",
-  "designedBy": "| Designed by",
+  "designedB": "Designed by",
  }
 };
 
