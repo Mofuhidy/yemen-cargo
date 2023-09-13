@@ -42,16 +42,16 @@
                         </li>
                         <li class="d-flex align-items-center rounded-4 p-1">
                             <select class="p-1 mt-2 lang">
-                                <option value="en" selected>English</option>
-                                <option value="ar">العربية</option>
+                                <option value="en" selected>En</option>
+                                <option value="ar">ع</option>
                             </select>
                         </li>
                     </ul>
                     <div class="d-flex flex-row-reverse d-md-none align-items-baseline gap-2">
                         <img src="./assets/icons/Union.svg" alt="menu burger" class="menuIcon d-flex d-md-none" />
-                        <select class="p-1 mt-2 lang d-flex d-md-none" id="langMob">
-                            <option value="en" selected>English</option>
-                            <option value="ar">العربية</option>
+                        <select class="p-1 mt-2 lang d-flex d-md-none rounded-4" id="langMob">
+                            <option value="en" selected>En</option>
+                            <option value="ar">ع</option>
                         </select>
                     </div>
                 </div>
@@ -401,28 +401,37 @@
                 </ul>
             </div>
             <div class="w-md-75 pt-5 ms-md-5 ">
-                <form class="d-flex flex-column gap-3">
+                <form class="d-flex flex-column gap-3" id="dform" method="POST">
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="Full name" required data-translate="fullName">
-                        <input type="email" placeholder="Email" required data-translate="email">
+                        <input type="text" name="fullName" placeholder="Full name" required data-translate="fullName">
+                        <input type="email" name="email" placeholder="Email" required data-translate="email">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="tel" placeholder="Phone Number" required data-translate="phoneNumber">
-                        <input type="text" placeholder="Address" required data-translate="address">
+                        <input type="tel" name="phoneNumber" placeholder="Phone Number" required
+                            data-translate="phoneNumber">
+                        <input type="text" name="address" placeholder="Address" required data-translate="address">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="From (Country) / (Port)" required data-translate="from">
-                        <input type="text" placeholder="To (Country) / (Port)" required data-translate="to">
+                        <input type="text" name="from" placeholder="From (Country)" required data-translate="from">
+                        <input type="text" name="fromPort" placeholder="Port" required data-translate="port">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="text" placeholder="Commodity" required data-translate="commodity">
-                        <input type="text" placeholder="Container type and size" required data-translate="container">
+                        <input type="text" name="to" placeholder="To (Country)" required data-translate="to">
+                        <input type="text" name="toPort" placeholder="Port" required data-translate="port">
                     </div>
                     <div class="input-group gap-3">
-                        <input type="number" placeholder="Number of containers" required data-translate="containers">
-                        <input type="text" placeholder="Cargo weight per conainer" requiredd data-translate="weight">
+                        <input type="text" name="commodity" placeholder="Commodity" required data-translate="commodity">
+                        <input type="text" name="containerTypeSize" placeholder="Container type and size" required
+                            data-translate="container">
+                    </div>
+                    <div class="input-group gap-3">
+                        <input type="number" name="containers" placeholder="Number of containers" required
+                            data-translate="containers">
+                        <input type="text" name="weight" placeholder="Cargo weight per conainer" requiredd
+                            data-translate="weight">
                     </div>
                     <button type="submit" data-translate="book">Book now</button>
+                    <span class="error"></span>
                 </form>
             </div>
         </div>
@@ -470,14 +479,14 @@
         </footer>
     </section>
 
-    <div class="footer-footer">
-        <p class="footer-footer-names">© 2023 Yemen Cargo | <span data-translate="designedBy" class="px-1"> Designed by
-            </span>
-            <a href="#" target="_blank">mo7shahari </a> <span data-translate="poweredBy"> Powered by </span>
-            <a href="#" target="_blank">
-                Fuhidy
-            </a>
-        </p>
+    <div class="footer-footer d-flex justify-content-center align-items-center flex-md-row flex-column">
+        <span class="px-1">© 2023 Yemen Cargo | </span>
+        <div class="">
+            <span data-translate="designedB"> Designed by</span><a href="https://www.behance.net/mohammealshaha"
+                target="_blank">mo7shahari </a>
+            <span data-translate="poweredBy"> Powered by </span><a href="https://www.linkedin.com/in/mo-fuhidy/"
+                target="_blank">Fuhidy</a>
+        </div>
     </div>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
