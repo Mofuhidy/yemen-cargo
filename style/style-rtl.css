@@ -206,7 +206,7 @@ li.nav-items:not(:last-child)::after {
   line-height: normal;
   background: rgba(4, 28, 55, 0.5);
   padding: 0.1875rem 0.5625rem;
-  width: 18.3125rem;
+  width: 13.3125rem;
   align-items: center;
   border-right: var(--primary-color) 0.25rem solid;
   border-left: none;
@@ -306,6 +306,7 @@ li.nav-items:not(:last-child)::after {
   left: 50%;
   transform: translate(-50%, -10%);
 }
+
 
 .whyUsBox .images {
   height: 30rem;
@@ -476,6 +477,7 @@ li.nav-items:not(:last-child)::after {
   font-weight: 400;
   line-height: normal;
   padding-right: 0.8rem;
+
 }
 
 .bookingSection {
@@ -531,8 +533,9 @@ li.nav-items:not(:last-child)::after {
   color: var(--text-heading-color);
 }
 
-.bookingInfo img {
+[dir="rtl"] .bookingInfo img {
   width: 3rem;
+  margin-left: 1rem;
 }
 
 input {
@@ -707,6 +710,7 @@ button:hover {
   }
   .social {
     margin-top: 7rem;
+    padding: 0;
   }
 
   [dir="rtl"] .contact ul li p {
@@ -763,9 +767,10 @@ button:hover {
     width: 100%;
   }
 
-  .whyUsBoxDetails {
+  [dir="rtl"] .whyUsBoxDetails {
     padding-bottom: 4rem;
     width: auto;
+    padding-right: 1rem;
   }
 
   .images {
@@ -775,8 +780,9 @@ button:hover {
   }
 
   [dir="rtl"] .images .firstAbout {
-    width: 20rem;
+    width: 90%;
     height: 20rem;
+    margin-left: 1.2rem;
   }
 
   [dir="rtl"] .images .secAbout {
@@ -848,12 +854,12 @@ button:hover {
   }
 
   [dir="rtl"] .why-choose .whyChooseImg {
-    width: 22rem;
-    margin-right: -50px;
+    width: 21rem;
+    margin-right: -3rem;
   }
 
   [dir="rtl"] .whyChooseBox {
-    padding-inline: 4rem;
+    padding-inline: 2rem;
     margin-top: 4rem;
     padding-bottom: 5rem;
     width: 100%;
