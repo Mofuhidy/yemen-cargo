@@ -3,30 +3,21 @@ import translations from './translations.js';
 
 const languageSelector = document.querySelector(".lang");
 const languageSelectors = document.getElementById("langMob");
+
 languageSelector.addEventListener("change", (event) => {
   setLanguage(event.target.value);
-  localStorage.setItem("lang", event.target.value);
 });
 
 languageSelectors.addEventListener("change", (event) => {
   setLanguage(event.target.value);
-  localStorage.setItem("lang", event.target.value);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const language = localStorage.getItem("lang") || "en"; 
-  const languageSelector = document.querySelector(".lang");
 
-  // Loop through the options and set the selected option based on the stored language
-  for (let option of languageSelector.options) {
-    if (option.value === language) {
-      option.selected = true;
-      break; // Exit the loop once the selected option is found
-    }
-  }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const languageSelector = document.querySelector(".lang");
   const event = new Event("change", { bubbles: true });
   languageSelector.dispatchEvent(event);
-   setLanguage(language);
 });
 
 const setLanguage = (language) => {
@@ -36,6 +27,17 @@ const setLanguage = (language) => {
       element.innerHTML = translations[language][key];
       element.setAttribute('placeholder', translations[language][key]);
   });
+
+  var selectElement = document.querySelector('.select'); 
+  
+   Array.from(selectElement.options).forEach(function (option) {
+      var key = option.getAttribute('data-translate');
+      if (key) {
+        option.text = translations[language][key];
+      }
+    });
+  
+
   document.dir = language === 'en' ? 'ltr' : 'rtl';
   document.lang = language === 'en' ? 'en' : 'ar';
 };

@@ -14,8 +14,8 @@ var translations = {
   "safe": "حلول شحن آمنة وموثوقة",
   "seaFreight": "الشحن البحري",
   "seaFreightPara": "من خلال خدمات الشحن البحري التي نقدمها، نقدم حلولاً فعالة من حيث التكلفة لشحناتك البحرية. بدءً من حمولات الحاويات الكاملة (FCL) إلى حمولات الحاويات الجزئية (LCL)، فإننا نقدم خيارات مرنة وفعالة لبضائعك.",
-  "warehousing": "التخزين والتوزيع",
-  "warehousingPara": "نحن نقدم مرافق تخزين آمنة لاحتياجات التخزين قصيرة أو طويلة الأجل. يضمن نظام إدارة المخزون المتقدم لدينا تتبعاً دقيقاً وتوزيعاً فعالاً لبضائعك.",
+  "clearance": "التخليص الجمركي",
+  "clearancePara": "يمكن أن تكون المعاملات والإجراءات الجمركية أمراً معقداً، ولكن مع فريقنا ذو الخبرة، يمكنك الوثوق بنا للتعامل مع جميع المستندات وعمليات التخليص اللازمة بسلاسة، مما يضمن وصول شحناتك إلى وجهتها دون أي تأخير.",
   "airFreight": "الشحن الجوي",
   "airFreightPara": "توفر خدمات الشحن الجوي لدينا نقلًا سريعًا وفعالاً للشحنات الحساسة للوقت وذات القيمة العالية. من خلال الشراكات الإستراتيجية مع شركات الطيران الكبرى، نضمن اتصالات موثوقة وأسعار تنافسية لتسليم البضائع الخاصة بك في جميع أنحاء العالم.",
   "roadFreight": "الشحن البري",
@@ -60,8 +60,12 @@ var translations = {
   "container": "نوع الحاوية وحجمها: ( 20 جاف – 40 جاف – 20 مبرد – 40 مبرد – 40 HC)",
   "containers": "عدد الحاويات",
   "weight": "وزن البضاعة لكل حاوية",
-  "poweredBy": " صُنع بحب بواسطة ",
-  "designedBy": " صُمم بحب بواسطة  ",
+  "poweredBy": "  | صُنع بواسطة ",
+  "designedBy": " صُمم بواسطة  ",
+  "Dry20": "20 جاف",
+  "Dry40": "40 جاف",
+  "Reefer20": "20 مبرد",
+  "Reefer40": "40 مبرد",
 }, 
  en: {
   "home": "Home",
@@ -69,7 +73,7 @@ var translations = {
   "services": "Services",
   "booking": "Booking",
   "contact": "Contact",
-  "contactUs": "ContactUs",
+  "contactUs": "Contact Us",
   'call': "Call Us",
   "email": "Email",
   "yemenCargo":"Yemen Cargo, Your Gateway to any Destination in the World",
@@ -81,12 +85,9 @@ var translations = {
                             solutions for your ocean shipments.\
                             From full container loads\
                             (FCL) to less than container loads (LCL), we offer flexible options and efficient handling\
-                            for your goods",
- "warehousing": "Warehousing and Distribution",
- "warehousingPara": "We provide secure warehousing facilities for short-term or\
-                            long-term storage needs. Our\
-                            advanced inventory management\
-                            system ensures accurate tracking and efficient distribution of your goods.",
+                            for your goods.",
+ "clearance": "Customs Clearance",
+ "clearancePara": "Navigating through customs procedures can be complex, but with our experienced team, you can trust us to handle all the necessary documentation and clearance processes smoothly, ensuring your shipments reach their destination without any delays.",
   "airFreight": "Air Freight",
   "airFreightPara": "Our air freight services offer fast and efficient\
                             transportation for time-sensitive and\
@@ -150,9 +151,13 @@ var translations = {
   "commodity": "Commodity",
   "container": "Container type and size: (20 Dry - 40 Dry  -  20 Reefer -  40 Reefer  -  40 HC)",
   "containers": "Number of containers",
-  "weight": "Cargo weight per conainer",
+  "weight": "Cargo weight per container",
   "poweredBy": "| Powered by",
-  "designedBy": "| Designed by",
+  "designedBy": "Designed by",
+  "Dry20": "20 Dry",
+  "Dry40": "40 Dry",
+  "Reefer20": "20 Reefer",
+  "Reefer40": "40 Reefer",
  }
 };
 
