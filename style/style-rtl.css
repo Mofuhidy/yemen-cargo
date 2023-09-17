@@ -52,9 +52,10 @@ h5 {
   color: var(--text-heading-color);
 }
 
-p {
+[dir="rtl"] p {
   color: var(--text-paragraph-color);
   margin-bottom: 0;
+  font-family: "Cairo", sans-serif;
 }
 
 .hero {
@@ -87,10 +88,6 @@ nav {
 header .firstNav {
   height: 6rem;
   background-color: var(--primary-sec-color);
-}
-
-.logo {
-  height: 2.2rem;
 }
 
 .contact ul {
@@ -127,7 +124,7 @@ header .secNav {
   height: 1.19rem;
 }
 
-.nav-items a {
+[dir="rtl"] .nav-items a {
   text-decoration: none;
   color: #fff;
   font-family: "Cairo", sans-serif;
@@ -158,6 +155,11 @@ header .secNav {
   transition: 0.2s ease-in-out;
 }
 
+[dir="rtl"] .whyUsBoxDetails .logisticPara {
+  font-family: "Cairo", sans-serif;
+  padding-inline: 0.5rem;
+}
+
 .secNav ul {
   gap: 1.75rem;
 }
@@ -180,7 +182,7 @@ li.nav-items:not(:last-child)::after {
   margin-top: 4rem;
   padding-right: 10rem;
   display: flex;
-  width: 38rem;
+  width: 43rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
@@ -271,7 +273,7 @@ li.nav-items:not(:last-child)::after {
   line-height: normal;
 }
 
-.service p {
+[dir="rtl"] .service p {
   color: var(--text-paragraph-color);
   font-family: "Cairo", sans-serif;
   font-size: 1rem;
@@ -305,25 +307,6 @@ li.nav-items:not(:last-child)::after {
   transform: translate(-50%, -10%);
 }
 
-.whyUsBoxDetails h3 {
-  color: var(--text-heading-color);
-  font-family: "Rubik", sans-serif;
-  font-size: 2.1875rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  width: 22rem;
-}
-
-.whyUsBoxDetails .logisticPara {
-  color: var(--text-paragraph-color);
-  font-family: "Cairo", sans-serif;
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 151.523%;
-  width: 20rem;
-}
 
 .whyUsBox .images {
   height: 30rem;
@@ -445,9 +428,9 @@ li.nav-items:not(:last-child)::after {
 }
 
 [dir="rtl"] .why-choose .whyChooseImg {
-  width: 45rem;
+  width: 100%;
   margin-left: 0rem;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 
 .whyChooseBox h3 {
@@ -493,16 +476,13 @@ li.nav-items:not(:last-child)::after {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-right: 1rem;
+  padding-right: 0.8rem;
+
 }
 
 .bookingSection {
   min-height: 100vh;
   background: linear-gradient(180deg, #ffd44e 0%, rgba(255, 212, 78, 0) 100%);
-}
-
-.bookingSection {
-  padding-inline: 10rem;
 }
 
 [dir="rtl"] .bookingContaienr .smallLabels {
@@ -533,7 +513,7 @@ li.nav-items:not(:last-child)::after {
   padding-left: 1rem;
 }
 
-.bookingInfoDetails p {
+[dir="rtl"] .bookingInfoDetails p {
   margin-bottom: 0;
   color: var(--text-heading-color);
   font-family: "Cairo", sans-serif;
@@ -541,6 +521,7 @@ li.nav-items:not(:last-child)::after {
   font-style: normal;
   font-weight: 400;
   line-height: 135.023%;
+  padding-right: 0.8rem;
 }
 
 .bookingInfoDetails a {
@@ -566,7 +547,6 @@ input {
 }
 
 input::placeholder {
-  color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -620,7 +600,6 @@ button:hover {
   height: 24rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
   margin-top: -15px;
 }
 
@@ -646,13 +625,6 @@ button:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-footer {
-  height: 45vh;
-  background-color: var(--primary-sec-color);
-  padding-inline: 14rem;
-  margin-top: -2rem;
 }
 
 .footerInfo {
@@ -722,10 +694,6 @@ footer {
 
   header .firstNav {
     height: 6rem;
-  }
-
-  .logo {
-    height: 1.5rem;
   }
 
   .contact ul {
@@ -820,8 +788,13 @@ footer {
   [dir="rtl"] .images .secAbout {
     position: absolute;
     bottom: -45px;
-    left: 80px;
+    left: 45px;
   }
+
+  [dir="rtl"].why-us {
+    min-height: 15dvh;
+  }
+
   .content {
     margin-top: 65rem;
     min-height: 40dvh;
@@ -857,10 +830,6 @@ footer {
 
   .img-details h3 {
     text-align: start;
-  }
-
-  [dir="rtl"] .whyUsBoxDetails .logisticPara {
-    width: 20rem;
   }
 
   .bgGradient {
@@ -950,11 +919,6 @@ footer {
     scroll-snap-align: start;
   }
 
-  footer {
-    padding-inline: 0;
-    height: 30dvh;
-  }
-
   .footerNav {
     padding-inline: 0;
   }
@@ -963,6 +927,7 @@ footer {
     white-space: nowrap;
     padding-left: 4rem;
     margin-right: 0 !important;
+    padding-right: 0rem !important;
   }
 
   .subs h2 {
@@ -1070,12 +1035,15 @@ footer {
     padding-bottom: 4rem;
     width: auto;
   }
+
   .whyUsBoxDetails h3 {
     width: 45rem;
     padding-bottom: 1rem;
   }
-  .whyUsBoxDetails .logisticPara {
+
+  [dir="rtl"] .whyUsBoxDetails .logisticPara {
     width: 40rem;
+    font-family: "Cairo", sans-serif;
     padding-block: 0.5rem;
   }
 
@@ -1214,10 +1182,6 @@ footer {
 
   .bookingContaienrs {
     margin-bottom: 0;
-  }
-
-  footer {
-    height: 25vh;
   }
 
   [dir="rtl"] .featureDetails p {

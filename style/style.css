@@ -81,7 +81,7 @@ header .firstNav {
 }
 
 .logo {
-  height: 2.2rem;
+  height: 10rem;
 }
 
 .contact ul {
@@ -170,7 +170,7 @@ li.nav-items:not(:last-child)::after {
   margin-top: 4rem;
   padding-left: 10rem;
   display: flex;
-  width: 35.6rem;
+  width: 42rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
@@ -293,7 +293,8 @@ li.nav-items:not(:last-child)::after {
   height: 45rem;
   background-color: #fff;
   position: absolute;
-  width: 75%;
+  min-width: 75%;
+  max-width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -10%);
@@ -302,11 +303,11 @@ li.nav-items:not(:last-child)::after {
 .whyUsBoxDetails h3 {
   color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
-  font-size: 2.1875rem;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  width: 23rem;
+  width: 100%;
 }
 
 .whyUsBoxDetails .logisticPara {
@@ -324,7 +325,7 @@ li.nav-items:not(:last-child)::after {
 }
 
 .images .firstAbout {
-  width: 28rem;
+  width: 100%;
   height: 23rem;
   flex-shrink: 0;
 }
@@ -437,8 +438,8 @@ li.nav-items:not(:last-child)::after {
 }
 
 .why-choose .whyChooseImg {
-  width: 45rem;
-  margin-left: 5rem;
+  width: 100%;
+  margin-left: 3rem;
 }
 
 .whyChooseBox h3 {
@@ -476,6 +477,10 @@ li.nav-items:not(:last-child)::after {
   width: 3rem;
 }
 
+.pros {
+  padding-top: 1rem;
+}
+
 .featureDetails p {
   color: var(--text-heading-color);
   font-family: "Rubik", sans-serif;
@@ -488,10 +493,7 @@ li.nav-items:not(:last-child)::after {
 .bookingSection {
   min-height: 100vh;
   background: linear-gradient(180deg, #ffd44e 0%, rgba(255, 212, 78, 0) 100%);
-}
-
-.bookingSection {
-  padding-inline: 10rem;
+  padding-inline: 2.5%;
 }
 
 .bookingContaienr .smallLabels {
@@ -544,7 +546,8 @@ li.nav-items:not(:last-child)::after {
   width: 3rem;
 }
 
-input {
+input,
+.select {
   border: 1px solid var(--text-paragraph-color);
   background-color: transparent;
   padding: 0.5rem;
@@ -552,8 +555,12 @@ input {
   height: 3rem;
 }
 
+.select {
+  color: #3c3c3d8a;
+}
+
 input::placeholder {
-  color: var(--text-heading-color);
+  color: #3c3c3d8a;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -561,7 +568,8 @@ input::placeholder {
   line-height: normal;
 }
 
-input:focus-visible {
+input:focus-visible,
+.select:focus-visible {
   outline: none;
 }
 
@@ -607,7 +615,7 @@ button:hover {
   height: 24rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: -15px;
 }
 
@@ -623,7 +631,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 20px 35px;
 }
 
 .subs h2 {
@@ -636,9 +644,8 @@ button:hover {
 }
 
 footer {
-  height: 45vh;
+  min-height: 45vh;
   background-color: var(--primary-sec-color);
-  padding-inline: 14rem;
   margin-top: -2rem;
 }
 
@@ -719,7 +726,7 @@ footer {
   }
 
   .logo {
-    height: 1.5rem;
+    height: 8rem;
   }
 
   .contact ul {
@@ -812,8 +819,8 @@ footer {
 
   .images .secAbout {
     position: absolute;
-    bottom: -45px;
-    left: 45px;
+    bottom: -65px;
+    left: 5px;
   }
 
   .content {
@@ -855,7 +862,19 @@ footer {
   }
 
   .whyUsBoxDetails .logisticPara {
-    width: 22rem;
+    width: 100%;
+  }
+
+  .pros {
+    padding-top: 0.5rem;
+  }
+
+  .prosDetails {
+    padding-top: 0.5rem;
+  }
+
+  .why-us {
+    min-height: 35dvh;
   }
 
   .bgGradient {
@@ -863,7 +882,7 @@ footer {
   }
 
   .why-choose {
-    height: 100dvh;
+    height: 85dvh;
     background: linear-gradient(
       to bottom,
       var(--primary-sec-color) 15%,
@@ -922,7 +941,8 @@ footer {
     margin-left: 3rem;
   }
 
-  input {
+  input,
+  .select {
     width: 100%;
   }
 
@@ -947,7 +967,7 @@ footer {
 
   footer {
     padding-inline: 0;
-    height: 30dvh;
+    min-height: 30dvh;
   }
 
   .footerNav {
@@ -974,7 +994,7 @@ footer {
   }
 
   .footer-footer-names {
-    padding: 1rem;
+    padding: 0rem;
     font-size: 0.68rem;
   }
 
@@ -1034,6 +1054,14 @@ footer {
   }
   .whyUsBox {
     padding-inline: 2rem;
+  }
+
+  .img-details h5 {
+    font-size: 0.8rem;
+  }
+
+  .img-details p {
+    font-size: 0.7rem;
   }
 }
 
@@ -1172,7 +1200,8 @@ footer {
     min-height: auto;
   }
 
-  input {
+  input,
+  .select {
     width: 100%;
   }
 
@@ -1199,6 +1228,6 @@ footer {
   }
 
   footer {
-    height: 25vh;
+    min-height: 25vh;
   }
 }
