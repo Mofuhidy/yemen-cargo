@@ -38,8 +38,7 @@ var translations = {
   "specializedTransport": "نقل مخصص",
   "specializedTransportPara": "نقل بحري",
   "whyChoose": "لماذا تختارنا",
-  "weCreate": "نحن نخلق فرصة للوصول إلى إمكانية",
-  "weCreatePara": "الاستفادة من الأطُر السريعة لتوفير ملخص قوي لاستراتيجية تعزز التفكير التعاوني لتعزيز القيمة الشاملة",
+  "weCreate": "نوجد لك الفرص التي تمكنك من الوصول الي غاياتك",
   "safePackage": "شحنة آمنه",
   "globalTracking": "تتبع عالمي",
   "inTimeDelivery": "تسليم في الوقت المحدد",
@@ -127,11 +126,6 @@ var translations = {
   "specializedTransportPara": "Ocean Transports",
   "whyChoose": "Why choose",
   "weCreate": "We create opportunity to reach potential",
-  "weCreatePara": "Leverage agile frameworks to provide a robust\
-                synopsis for strategy foster\
-                collaborative thinking to\
-                further the overall\
-                value proposition.",
   "safePackage": "Safe Package",
   "globalTracking": "Global Tracking",
   "inTimeDelivery": "In Time Delivery",
