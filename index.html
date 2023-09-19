@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yemen Cargo</title>
-    <link rel="icon" type="image/ico" href="./assets/icons/ship_cargo_shipping_export_transportation_icon_188951.ico" />
+    <link rel="icon" type="image/ico" href="./assets/cargo-ffff.ico" />
 
     <link rel="stylesheet" href="./style/style-rtl.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -414,7 +414,7 @@
                         <input type="text" name="address" placeholder="Address" required data-translate="address">
                     </div>
                     <div class="input-group gap-3">
-                        <select name="countryFrom" required class="en-select  select">
+                        <select name="countryFrom" required class="en-select select">
                             <option value="">Select a Country From...</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
@@ -667,7 +667,7 @@
                             <option value="Zimbabwe">Zimbabwe</option>
                         </select>
                         <select name="countryFrom" required class="ar-select  select">
-                            <option value="">من دولة</option>
+                            <option value="" disabled selected>من دولة</option>
                             <option value="آروبا">آروبا</option>
                             <option value="أذربيجان">أذربيجان</option>
                             <option value="أرمينيا">أرمينيا</option>
@@ -922,11 +922,11 @@
                             <option value="وسط افريقيا">وسط افريقيا</option>
                             <option value="ويتنام">ويتنام</option>
                         </select>
-                        <input type="text" placeholder="Port" required data-translate="port">
+                        <input type="text" placeholder="Port" required data-translate="portFrom">
                     </div>
                     <div class="input-group gap-3">
                         <select name="countryTo" required class="en-select select">
-                            <option value="">Select a Country From...</option>
+                            <option value="" disabled selected>Select a Country To...</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -1178,7 +1178,7 @@
                             <option value="Zimbabwe">Zimbabwe</option>
                         </select>
                         <select name="countryTo" required class="ar-select  select">
-                            <option value="">إلى دولة</option>
+                            <option value="" disabled selected>إلى دولة</option>
                             <option value="آروبا">آروبا</option>
                             <option value="أذربيجان">أذربيجان</option>
                             <option value="أرمينيا">أرمينيا</option>
@@ -1433,11 +1433,12 @@
                             <option value="وسط افريقيا">وسط افريقيا</option>
                             <option value="ويتنام">ويتنام</option>
                         </select>
-                        <input type="text" placeholder="Port" required data-translate="port">
+                        <input type="text" placeholder="Port" required data-translate="portTo">
                     </div>
                     <div class="input-group gap-3">
                         <input type="text" placeholder="Commodity" required data-translate="commodity">
                         <select type="text" required class="select">
+                            <option value="" disabled selected>(choose / اختر)</option>
                             <option value="20 Dry" data-translate="Dry20">20 Dry</option>
                             <option value="40 Dry" data-translate="Dry40">40 Dry</option>
                             <option value="20 Reefer" data-translate="Reefer20">20 Reefer</option>
