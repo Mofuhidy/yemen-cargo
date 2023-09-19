@@ -871,9 +871,10 @@ button:hover {
     width: 100%;
   }
 
-  .whyChooseBox h3 {
+  [dir="rtl"] .whyChooseBox h3 {
     font-size: 1.9rem;
-    width: 18rem;
+    width: 21rem;
+    padding-top: 1rem;
   }
 
   .whyChooseBox .whyChooseParag {
@@ -885,8 +886,9 @@ button:hover {
     padding-top: 3rem;
   }
 
-  .bookingContaienr h3 {
+  [dir="rtl"] .bookingContaienr h3 {
     width: 21.5rem;
+    padding-top: 1rem;
   }
 
   [dir="rtl"] .featureDetails p {
