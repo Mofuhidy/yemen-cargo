@@ -810,12 +810,13 @@ footer {
   }
 
   .headerServices{
-    width: 19rem;
+    width: 20rem;
   }
   
   .headerServices h3 {
     text-align: start;
     padding-top: 1rem;
+    padding-bottom: 5rem;
   }
 
   .bg {
