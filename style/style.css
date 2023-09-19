@@ -809,8 +809,13 @@ footer {
     padding-inline: 2rem;
   }
 
+  .headerServices{
+    width: 23rem;
+  }
+  
   .headerServices h3 {
     text-align: start;
+    padding-top: 1rem;
   }
 
   .bg {
@@ -946,7 +951,7 @@ footer {
 
   .whyChooseBox h3 {
     font-size: 1.9rem;
-    width: 18rem;
+    width: 21rem;
   }
 
   .whyChooseBox .whyChooseParag {
