@@ -555,8 +555,16 @@ input,
   height: 3rem;
 }
 
-.select {
+/* .select {
   color: #3c3c3d8a;
+} */
+
+select:required:invalid {
+  color: #3c3c3d8a;
+}
+
+option[value=""][disabled] {
+  display: none;
 }
 
 input::placeholder {
@@ -809,10 +817,10 @@ footer {
     padding-inline: 2rem;
   }
 
-  .headerServices{
+  .headerServices {
     width: 20rem;
   }
-  
+
   .headerServices h3 {
     text-align: start;
     padding-top: 1rem;
