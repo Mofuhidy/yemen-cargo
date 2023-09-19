@@ -810,7 +810,7 @@ footer {
   }
 
   .headerServices{
-    width: 23rem;
+    width: 19rem;
   }
   
   .headerServices h3 {
@@ -908,7 +908,7 @@ footer {
   }
 
   .why-us {
-    min-height: 35dvh;
+    min-height: 40dvh;
   }
 
   .bgGradient {
@@ -916,7 +916,7 @@ footer {
   }
 
   .why-choose {
-    height: 85dvh;
+    height: 90dvh;
     background: linear-gradient(
       to bottom,
       var(--primary-sec-color) 15%,
@@ -988,6 +988,7 @@ footer {
   .secBg {
     height: 34rem;
     margin: -195px;
+    background-size: contain;
   }
 
   .sponsorsImages {
