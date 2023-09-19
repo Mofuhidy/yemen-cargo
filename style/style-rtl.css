@@ -101,6 +101,10 @@ header .firstNav {
   text-decoration: none;
 }
 
+.whyUsBoxDetails h3 {
+  padding-block: 1rem;
+}
+
 [dir="rtl"] .contact ul li p {
   color: #fff;
   font-size: 0.9rem;
@@ -307,7 +311,6 @@ li.nav-items:not(:last-child)::after {
   transform: translate(-50%, -10%);
 }
 
-
 .whyUsBox .images {
   height: 30rem;
 }
@@ -477,7 +480,6 @@ li.nav-items:not(:last-child)::after {
   font-weight: 400;
   line-height: normal;
   padding-right: 0.8rem;
-
 }
 
 .bookingSection {
@@ -681,6 +683,10 @@ button:hover {
 [dir="rtl"] .imgContainer {
   width: 50%;
   margin-right: 3rem;
+}
+
+[dir="rtl"] select option {
+  font-family: "Rubik", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -963,6 +969,10 @@ button:hover {
     flex-direction: column;
     justify-content: start;
     gap: 20px;
+  }
+
+  .whyUsBoxDetails h3 {
+    padding-block: 1rem;
   }
 
   [dir="rtl"] .navInfoMobile {

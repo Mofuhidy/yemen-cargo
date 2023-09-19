@@ -603,6 +603,7 @@ button:hover {
   padding: 0;
   margin: 0;
   font-size: 0px;
+  width: 20rem;
 }
 
 .borderLine {
@@ -708,6 +709,33 @@ footer {
   margin-left: 0rem;
 }
 
+.enlan,
+.arlan {
+  display: flex;
+  padding: 1rem 0.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: none;
+  color: #fff;
+  font-family: "Krub";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135.023%;
+  border: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width: 100%;
+  margin-inline: 0.25rem;
+}
+
+.enlan:hover,
+.arlan:hover {
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     height: 100dvh;
@@ -809,7 +837,8 @@ footer {
   }
 
   .whyUsBoxDetails h3 {
-    width: 20rem;
+    width: 19rem;
+    padding-bottom: 1rem;
   }
 
   .images .firstAbout {
@@ -944,6 +973,7 @@ footer {
   input,
   .select {
     width: 100%;
+    cursor: pointer;
   }
 
   form button {
@@ -1062,6 +1092,27 @@ footer {
 
   .img-details p {
     font-size: 0.7rem;
+  }
+
+  .enlanMob,
+  .arlanMob {
+    display: flex;
+    padding: 1rem 0.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background: none;
+    color: #fff;
+    font-family: "Krub";
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.023%;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 100%;
+    margin-inline: 0.15rem;
   }
 }
 
