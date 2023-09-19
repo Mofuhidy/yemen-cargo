@@ -21,9 +21,9 @@ var translations = {
   "roadFreight": "الشحن البري",
   "roadFreightPara":" تغطي خدمات الشحن البري لدينا النقل المحلي وعبر الحدود، مما يوفر حلاً موثوقًا وآمنًا لمتطلباتك اللوجستية البرية.",
   "whyUs": "لماذا نحن",
-  "provideFull": "نقدم حلولاً لوجستية شاملة عالمية",
-  "logisticPara1": "شبكة عالمية موثوقة: تتيح لنا شبكتنا الواسعة من الشركاء والوكلاء الموثوقين في جميع أنحاء العالم تقديم حلول نقل سلسة عبر الحدود، مما يضمن وصول شحناتك إلى وجهتها بأمان وفي الوقت المحدد.",
-  "logisticPara2":"خدمة مخصصة: نحن نفهم أن كل عميل لديه متطلبات فريدة من نوعها. ولهذا السبب نتبع نهجاً شخصياً لتخصيص خدماتنا لتناسب احتياجاتك الفريدة، وتزويدك بحلول لوجستية مخصصة.",
+  "provideFull": "نحن نقدم مجموعة كاملة من الحلول اللوجستية العالمية",
+  "logisticPara1": "<strong>شبكة عالمية موثوقة: </strong> تتيح لنا شبكتنا الواسعة من الشركاء والوكلاء الموثوقين في جميع أنحاء العالم تقديم حلول نقل سلسة عبر الحدود، مما يضمن وصول شحناتك إلى وجهتها بأمان وفي الوقت المحدد.",
+  "logisticPara2":"<strong>خدمة مخصصة: </strong> نحن نفهم أن كل عميل لديه متطلبات فريدة من نوعها. ولهذا السبب نتبع نهجاً شخصياً لتخصيص خدماتنا لتناسب احتياجاتك الفريدة، وتزويدك بحلول لوجستية مخصصة.",
   "commitment":"الالتزام بالجودة والسلامة",
   "costSaving":"تكلفة الشحن الأمثل",
   "transporting":"نقل عبر العالم",
@@ -46,7 +46,7 @@ var translations = {
   "24/7Support": "دعم على مدار الساعة طوال أيام الأسبوع",
   "transparantPricing": "تسعير شفاف",
   "booking": "احجز",
-  "bookingNow": "احصل على حجزك الآن",
+  "bookingNow": "إحجز الآن",
   "fullName": "الإسم الكامل",
     "open": "من السبت إلى الخميس من ٩ صباحاً إلى ٦ مساء",
   "close":"الجمعة مغلق",
@@ -101,14 +101,14 @@ var translations = {
                             and secure solution for\
                             your land-based logistics requirements.",
   "whyUs": "Why Us",
-  "provideFull": 'We provide full range global logistics solution',
- "logisticPara1": "Reliable Global Network: Our extensive network of trusted\
+  "provideFull": 'We provide a full range of global logistics solutions',
+ "logisticPara1": "<strong>Reliable Global Network:</strong> Our extensive network of trusted\
                         partners and agents worldwide allows\
                         us to\
                         provide seamless\
                         transportation solutions across borders, ensuring your shipments reach their destination safely\
                         and on time.",
-  "logisticPara2": "Personalized Approach: We understand that every client has\
+  "logisticPara2": "<strong>Personalized Approach:</strong> We understand that every client has\
                         unique requirements. That's why we take a personalized approach to tailor our services to suit your specific needs, providing you with customized logistics\
                         solutions.",
   "commitment":"Commitment to Quality and Safety",
@@ -143,7 +143,6 @@ var translations = {
   "from": "From (Country)",
   "to": "To (Country)",
   "port": "Port",
-  "email": "Email",
   "commodity": "Commodity",
   "container": "Container type and size: (20 Dry - 40 Dry  -  20 Reefer -  40 Reefer  -  40 HC)",
   "containers": "Number of containers",

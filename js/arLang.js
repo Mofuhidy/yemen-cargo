@@ -1,24 +1,32 @@
 import translations from './translations.js';
 
 
-const languageSelector = document.querySelector(".lang");
-const languageSelectors = document.getElementById("langMob");
-
-languageSelector.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
-});
-
-languageSelectors.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
-});
-
-
+const languageSelector = document.querySelector(".enlan");
+const languageSelectors = document.querySelector(".arlan");
+const mobileEnMob = document.querySelector('.enlanMob');
+const mobileArMob = document.querySelector('.arlanMob');
 
 document.addEventListener("DOMContentLoaded", () => {
-  const languageSelector = document.querySelector(".lang");
-  const event = new Event("change", { bubbles: true });
-  languageSelector.dispatchEvent(event);
+  setLanguage('en');
 });
+
+
+languageSelector.addEventListener("click", (event) => {
+  setLanguage(event.target.value);
+});
+
+languageSelectors.addEventListener("click", (event) => {
+  setLanguage(event.target.value);
+});
+
+mobileEnMob.addEventListener("click", (event) => {
+  setLanguage(event.target.value);
+});
+mobileArMob.addEventListener("click", (event) => {
+  setLanguage(event.target.value);
+});
+
+
 
 const setLanguage = (language) => {
   var elementsToTranslate = document.querySelectorAll('[data-translate]');
@@ -40,4 +48,26 @@ const setLanguage = (language) => {
 
   document.dir = language === 'en' ? 'ltr' : 'rtl';
   document.lang = language === 'en' ? 'en' : 'ar';
+
+  const enSelect =  document.querySelectorAll('.en-select')
+  const arSelect = document.querySelectorAll('.ar-select')
+
+
+
+  if (language === 'en') {
+    enSelect.forEach(element => {
+      element.classList.remove('d-none');
+    });
+    arSelect.forEach(element => {
+      element.classList.add('d-none');
+    });
+  } else {
+    enSelect.forEach(element => {
+      element.classList.add('d-none');
+    });
+    arSelect.forEach(element => {
+      element.classList.remove('d-none');
+    });
+  }
+
 };
