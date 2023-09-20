@@ -873,6 +873,7 @@ footer {
 
   .content h3 {
     padding-inline: 1rem;
+    padding-top: 1rem;
   }
 
   .photos-grid {
@@ -917,7 +918,7 @@ footer {
   }
 
   .why-us {
-    min-height: 40dvh;
+    min-height: 35dvh;
   }
 
   .bgGradient {
@@ -1194,12 +1195,16 @@ footer {
   }
 
   .photos-grid img {
-    width: 12rem;
+    width: 13rem;
   }
 
   .img-details {
     opacity: 1;
     text-align: start;
+  }
+
+  .img-details h5 {
+    font-size: 0.9rem;
   }
 
   .bgGradient {
