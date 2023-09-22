@@ -166,6 +166,11 @@ li.nav-items:not(:last-child)::after {
   height: 75%;
 }
 
+.detils a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .hero-content {
   margin-top: 4rem;
   padding-left: 10rem;
@@ -307,7 +312,7 @@ li.nav-items:not(:last-child)::after {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  width: 100%;
+  width: 95%;
 }
 
 .whyUsBoxDetails .logisticPara {
@@ -326,7 +331,7 @@ li.nav-items:not(:last-child)::after {
 
 .images .firstAbout {
   width: 100%;
-  height: 23rem;
+  /* height: 23rem; */
   flex-shrink: 0;
 }
 .images .secAbout {
@@ -943,7 +948,7 @@ footer {
   }
 
   .why-choose .whyChooseImg {
-    width: 21rem;
+    width: 150%;
     margin-left: 0;
   }
 
