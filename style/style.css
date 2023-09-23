@@ -1143,7 +1143,7 @@ footer {
   }
 
   .whyUsBox {
-    width: 85%;
+    max-width: 100%;
     margin-inline: 0;
     flex-direction: column;
     padding-left: 5rem;
@@ -1304,6 +1304,6 @@ footer {
   }
 
   footer {
-    min-height: 25vh;
+    min-height: 45vh;
   }
 }
