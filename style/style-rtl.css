@@ -1025,7 +1025,7 @@ button:hover {
     margin-left: 24px;
   }
 
-   [dir="rtl"] .mobileLinks a{
+  [dir="rtl"] .mobileLinks a {
     font-size: 1.5rem;
   }
 
@@ -1207,5 +1207,11 @@ button:hover {
   [dir="rtl"] .featureDetails p {
     padding-right: 0.8rem !important;
     padding-left: 0rem !important;
+  }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  [dir="rtl"] .whyUsBoxDetails h3 {
+    width: 40rem;
   }
 }

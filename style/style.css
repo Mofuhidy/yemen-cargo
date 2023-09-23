@@ -1304,13 +1304,13 @@ footer {
   }
 
   footer {
-    min-height: 45vh;
+    min-height: 30vh;
   }
 }
 
 @media only screen and (max-height: 575.98px) and (orientation: landscape) {
   .hero {
-    min-height: 115vh;
+    min-height: 120vh;
   }
 
   .hero-content {
@@ -1319,5 +1319,17 @@ footer {
 
   .hero-content h1 {
     font-size: 2.6rem;
+  }
+
+  .sponsorsImages.justify-content-md-center {
+    justify-content: normal !important;
+  }
+
+  .bgGradient {
+    height: 60vh;
+  }
+
+  footer {
+    min-height: 50vh;
   }
 }
