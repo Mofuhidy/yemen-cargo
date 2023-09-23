@@ -1307,3 +1307,17 @@ footer {
     min-height: 45vh;
   }
 }
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .hero {
+    min-height: 115vh;
+  }
+
+  .hero-content {
+    margin-top: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+}
