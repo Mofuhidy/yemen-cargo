@@ -1219,7 +1219,7 @@ button:hover {
     margin-top: 2rem;
   }
 
-  .logo {
+  [dir="rtl"] .logo {
     margin-left: 20px !important;
   }
 
