@@ -1229,7 +1229,7 @@ button:hover {
     left: 250px;
   }
 
-  [dir="rtl"] c {
+  [dir="rtl"] .whyUsBox {
     width: 85%;
     padding-right: 4rem;
   }
