@@ -1214,4 +1214,23 @@ button:hover {
   [dir="rtl"] .whyUsBoxDetails h3 {
     width: 40rem;
   }
+
+  [dir="rtl"] .hero-content {
+    margin-top: 2rem;
+  }
+
+  .logo {
+    margin-left: 20px !important;
+  }
+
+  [dir="rtl"] .images .secAbout {
+    position: absolute;
+    bottom: -50px;
+    left: 250px;
+  }
+
+  [dir="rtl"] c {
+    width: 85%;
+    padding-right: 4rem;
+  }
 }

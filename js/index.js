@@ -23,6 +23,7 @@ buttonCancel.addEventListener('click', () => {
   buttonCancel.classList.toggle('active');
   mobileEn.classList.remove('d-none');
   mobileAr.classList.remove('d-none');
+  body.classList.toggle('active');
 });
 
 // links functionality
