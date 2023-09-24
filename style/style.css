@@ -81,7 +81,7 @@ header .firstNav {
 }
 
 .logo {
-  height: 10rem;
+  height: 4rem;
 }
 
 .contact ul {
@@ -767,7 +767,7 @@ footer {
   }
 
   .logo {
-    height: 8rem;
+    height: 4rem;
   }
 
   .contact ul {
@@ -1143,7 +1143,7 @@ footer {
   }
 
   .whyUsBox {
-    width: 85%;
+    max-width: 100%;
     margin-inline: 0;
     flex-direction: column;
     padding-left: 5rem;
@@ -1304,6 +1304,32 @@ footer {
   }
 
   footer {
-    min-height: 25vh;
+    min-height: 30vh;
+  }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .hero {
+    min-height: 120vh;
+  }
+
+  .hero-content {
+    margin-top: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .sponsorsImages.justify-content-md-center {
+    justify-content: normal !important;
+  }
+
+  .bgGradient {
+    height: 60vh;
+  }
+
+  footer {
+    min-height: 50vh;
   }
 }
