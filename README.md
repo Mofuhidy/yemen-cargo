@@ -1,9 +1,6 @@
 # <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-
-  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
 
   <br/>
 
@@ -15,7 +12,6 @@
 
 # 📗 Table of Contents
 
-- [](#)
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Yemen Cargo ](#-yemen-cargo-)
   - [Live Demo ](#live-demo-)
@@ -26,10 +22,8 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-    - [Run tests](#run-tests)
     - [Deployment](#deployment)
     - [Usage](#usage)
-    - [Run tests](#run-tests-1)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -41,11 +35,11 @@
 
 # 📖 Yemen Cargo <a name="about-project"></a>
 
-**'Yemen Cargo'** is the first coding project I've done in microverse
+**'Yemen Cargo'** is a website with one page for safe & reliable cargo solutions in Yemen
 
 ## Live Demo <a name="live-demo"></a>
 
-[Yemen Cargo](https://mofuhidy.github.io/yemen-cargo/)
+[Yemen Cargo](https://yemencargo.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,7 +63,7 @@
 ### Key Features <a name="key-features"></a>
 
 - responsive design built with pure HTML5 and CSS3
-- menu for mobile view
+- Form to submit clients' cargo's information to Yemencargo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +82,7 @@ To get a local copy up and running, follow these steps:
 In order to run this project you need:
 
 - Basic knowledge of HTML and CSS
-- Basic knderstanding of Linters
+- Basic understanding of Linters
 - Basic understanding of Github
 
 ### Setup
@@ -101,30 +95,18 @@ Clone this repository to your desired folder:
 
 -Don't need to be installed
 
-### Run tests
-
-To run tests, run the following command:
-
-- npx stylelint "\*_/_.{css,scss}"
-- npx hint .
-- npx eslint .
-
 ### Deployment
 
 You can deploy this project using:
 
-- Github tools
+- GitHub tools
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Usage
 
-To run the project, just visit this link:
-https://mofuhidy.github.io/yemen-cargo/
-
-### Run tests
-
-- No tests yet.
+To run the project, visit this link:
+https://yemencargo.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,12 +121,6 @@ https://mofuhidy.github.io/yemen-cargo/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Make it mobile friendly and responsive on all devices**
-- [ ] **Add arabic language**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
